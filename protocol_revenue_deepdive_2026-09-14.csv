@@ -1,0 +1,1197 @@
+Protocol,Sub_Sector,Daily_Revenue_USD,7d_Revenue_USD,30d_Revenue_USD
+Tether,Stablecoin Issuer,16585600.0,114715893.0,482159032.0
+Circle USDC,Stablecoin Issuer,6766127.0,46844813.0,195034308.0
+Canton,Chain,1488215.0,10936092.0,49946183.0
+GMGN,Telegram Bot,1058290.0,12135256.0,41607214.0
+Hyperliquid Perps,Derivatives,1032831.0,9503329.0,57149431.0
+Pons V2,Launchpad,1020298.0,7681012.0,19795348.0
+fomo Wallet,Trading App,880852.0,9012342.0,26761367.0
+pump.fun,Launchpad,771378.0,6114761.0,34062949.0
+Axiom,Trading App,700005.0,6223087.0,24150970.0
+StonkFun,Launchpad,662715.0,7386821.0,9933046.0
+Tron,Chain,584839.0,5597092.0,23747139.0
+Grayscale,RWA,572778.0,4061202.0,16833145.0
+Sky Lending,CDP,453119.0,3106690.0,13441297.0
+Robinhood Chain,Chain,436306.0,7228991.0,33225070.0
+Polymarket International,Prediction Market,399653.0,4194914.0,16982756.0
+Collector Crypt,Physical TCG,397759.0,2846366.0,9195983.0
+World Liberty Financial,Lending,386272.0,2654585.0,10792702.0
+PumpSwap,Dexs,332589.0,2705246.0,15174155.0
+Uniswap V3,Dexs,315187.0,3883074.0,14161255.0
+Paxos Stablecoin Issuer,Stablecoin Issuer,296505.0,2104596.0,8770605.0
+Ripple USD,Stablecoin Issuer,230059.0,1591185.0,6021511.0
+Phantom Wallet,Wallets,200527.0,1732128.0,7352362.0
+Flap sh,Launchpad,186526.0,2418846.0,11999812.0
+DEX Screener,Coins Tracker,176717.0,1525998.0,5438427.0
+Aave V3,Lending,148124.0,1076609.0,4570584.0
+Aerodrome Slipstream,Dexs,144485.0,8932258.0,12706732.0
+Jupiter Aggregator,DEX Aggregator,139917.0,1238676.0,4202530.0
+Raydium AMM,Dexs,130271.0,1667400.0,3189116.0
+BONK.fun Launchpad,Launchpad,122923.0,1098980.0,1323246.0
+Fidelity Crypto Fund,CeDeFi,103721.0,737346.0,2997687.0
+Lido,Liquid Staking,100374.0,717230.0,2877723.0
+PancakeSwap AMM V3,Dexs,97851.0,1912654.0,5224958.0
+Pacifica Perps,Derivatives,91124.0,739498.0,3422120.0
+Terminal,Telegram Bot,83240.0,668409.0,2740102.0
+Meteora DLMM,Dexs,83082.0,705658.0,1859831.0
+Graphite Protocol,Launchpad,81896.0,733100.0,883932.0
+Solana,Chain,79294.0,596610.0,2413707.0
+Titan Builder,Block Builders,79004.0,1004813.0,4718537.0
+ORE Protocol,Gamified Mining,74726.0,476772.0,2549297.0
+pump.fun Mobile App,Interface,74554.0,721326.0,3288087.0
+Base,Chain,66437.0,2131096.0,5184923.0
+Polygon,Chain,66055.0,479424.0,2226274.0
+Blockchain Capital,RWA,65888.0,461143.0,1972132.0
+edgeX V2,Derivatives,65806.0,676466.0,3123132.0
+Binance staked ETH,Liquid Staking,62226.0,438558.0,1877654.0
+SLVR,Gamified Mining,61786.0,343837.0,986283.0
+ether.fi Stake,Liquid Staking,61384.0,422907.0,1775516.0
+Pons V1,Launchpad,60516.0,309402.0,1610312.0
+Courtyard,Physical TCG,57410.0,520588.0,2253918.0
+Jupiter Perpetual Exchange,Derivatives,56947.0,404489.0,2504314.0
+MetaMask Wallet,Wallets,55723.0,536189.0,2442599.0
+Lighter Perps,Derivatives,52280.0,508817.0,3044033.0
+LaunchLab,Launchpad,49729.0,464086.0,583438.0
+EtherFi Cash Liquid,Crypto Card Issuer,49454.0,396889.0,1622544.0
+Propr,Trading App,48680.0,351629.0,1263104.0
+Predict Fun,Prediction Market,43092.0,278285.0,945642.0
+Binance Alpha,Launchpad,41435.0,718503.0,2227153.0
+SolvBTC,Bridge,39532.0,278632.0,1153803.0
+Arbitrum Nitro,Foundation,38702.0,642497.0,2941119.0
+tradeXYZ,Interface,38295.0,465897.0,2441892.0
+Maestro,Telegram Bot,38031.0,366828.0,1348993.0
+BSC,Chain,37809.0,613148.0,2072780.0
+TRONSAVE,Services,37588.0,240483.0,942337.0
+Fragment,NFT Marketplace,36390.0,-194206.0,-3684760.0
+PancakeSwap AMM,Dexs,36346.0,488327.0,1856072.0
+AZverse Perps,Derivatives,36297.0,351610.0,1677668.0
+MetaMask Perps,Interface,35661.0,329472.0,1591779.0
+Base App,Wallets,35397.0,309797.0,1007238.0
+Lighter Robinhood Perps,Derivatives,35253.0,341149.0,1037179.0
+GMTrade,Derivatives,34230.0,208391.0,797684.0
+Hyperliquid Spot Orderbook,Dexs,34036.0,394737.0,2338750.0
+Ethereum,Chain,33894.0,469073.0,2762449.0
+NEAR Intents,Bridge,32298.0,219357.0,1072082.0
+Veda,Onchain Capital Allocator,31925.0,210410.0,850259.0
+Orca DEX,Dexs,30228.0,389126.0,1024979.0
+Hyper Foundation HYPE Staking,Staking Pool,30143.0,221174.0,916192.0
+up v3,Dexs,28422.0,297803.0,1410769.0
+Meteora DAMM V2,Dexs,27773.0,220207.0,602285.0
+o1 Launchpad,Launchpad,27722.0,471300.0,2704208.0
+Gacha TCG,SoFi,27166.0,115693.0,666301.0
+HASHCATS,Gamified Mining,27089.0,629773.0,629773.0
+Attention Mine,Gamified Mining,27055.0,222247.0,222247.0
+Native Core CLOB,Dexs,26989.0,166274.0,657821.0
+Geodnet,Oracle,26908.0,187905.0,874608.0
+Decibel,Derivatives,26203.0,101140.0,452177.0
+Trust Wallet Perps,Interface,25962.0,309330.0,1314311.0
+Trojan,Telegram Bot,24514.0,188656.0,876895.0
+Binance Staked SOL,Liquid Staking,24490.0,119287.0,459469.33
+Virtuals Protocol,AI Agents,24243.0,120371.0,666446.0
+Sentora Curator,Risk Curators,21659.0,156560.0,679728.0
+Venus Core Pool,Lending,21531.0,111241.0,426988.0
+Phantom Perps,Interface,20495.0,179779.0,1169446.0
+Pharaoh V3,Dexs,19419.0,191705.0,611862.0
+Catapult Trade,Derivatives,19398.0,134153.0,577599.0
+crvUSD,CDP,18959.0,36519.0,74807.0
+Derive Options,Options,18767.0,81320.0,394481.0
+Arrakis Modular,Liquidity Manager,18751.0,68071.0,390554.0
+CARDZ.GAME,Physical TCG,18642.0,114568.0,289906.0
+Kamino Lend,Lending,18049.0,130727.0,580146.0
+Spiko,RWA,17292.0,122616.0,511692.0
+Definitive,DEX Aggregator,17191.0,183174.0,618175.0
+Stargate V2,Cross Chain Bridge,17169.0,119834.0,319895.0
+Antarctic,Derivatives,16986.0,231627.0,828963.0
+Opensea Seaport,NFT Marketplace,16959.0,179560.0,821787.0
+BlackRock BUIDL,RWA,16935.0,120174.0,511256.0
+Nado Perps,Derivatives,16248.0,180220.0,915910.0
+SparkLend,Lending,15958.0,109455.0,432707.0
+Centrifuge Protocol,RWA,15230.0,108042.0,476452.0
+Mayan DEX Aggregator,DEX Aggregator,14722.0,147156.0,689088.0
+Gains Network,Derivatives,14639.0,123533.0,422783.0
+TermiX,AI Agents,14456.0,55923.0,316976.31999999995
+TxFlow Perps,Derivatives,14064.0,106131.0,725821.0
+Steakhouse Financial,Risk Curators,13844.0,102304.0,383290.0
+Venice,Farm,13520.0,471245.0,788052.0
+Anchorage By Figment HYPE Staking,Staking Pool,13477.0,102895.0,431730.0
+SoSoValue Indexes,Indexes,13253.0,191730.0,1645854.0
+Peapods Finance,Yield,13215.0,1.3,2.3199999999999994
+CoWSwap,DEX Aggregator,13188.0,269166.0,1147590.0
+fomo Perps,Interface,12752.0,130932.0,750117.0
+Aerodrome V1,Dexs,12249.0,264318.0,789915.0
+Ramses CL V2,Dexs,12035.0,94261.0,379560.0
+Hyperliquid L1,Chain,11714.0,175357.0,1834400.0
+Hydrex Integral,Dexs,11610.0,58774.0,241000.0
+HumidiFi,Dexs,11573.0,73944.0,394234.25
+Arbitrum,Chain,11328.0,107579.0,440977.0
+PredictStreet,Prediction Market,11265.0,392910.0,875007.38
+Jito DAO,DAO Service Provider,11172.0,93006.0,372845.0
+Gemint,Physical TCG,10569.0,57177.0,284430.0
+SoDEX Perps,Derivatives,10295.0,81870.0,209102.0
+Fluid Lending,Lending,10279.0,100455.0,407315.0
+THORChain DEX,Dexs,10243.0,93005.0,172078.47
+Compound V3,Lending,10069.0,63593.0,212340.0
+SSV Network,Staking Pool,10061.0,65674.0,274035.0
+MetaMask Predictions,Interface,9664.0,241070.0,418285.0
+WisdomTree,RWA,9504.0,66639.0,181054.0
+deBridge,Bridge,9462.0,132573.0,600185.0
+Fake World Assets,Luck Games,9366.0,56236.0,731154.0
+Sanctum Validator LSTs,Liquid Staking,9276.0,49675.0,208493.0
+Bloom Trading Bot,Gaming,9257.0,59797.0,299327.0
+PancakeSwap Infinity,Dexs,8950.0,90381.0,258798.0
+Inverse Finance FiRM,CDP,8778.0,60203.0,218943.0
+Monad,Chain,8452.0,75859.0,331130.0
+Dolomite,Lending,8357.0,54032.0,225288.0
+Primit Perps,Derivatives,8348.0,74381.0,235176.25
+Kelp,Liquid Restaking,8324.0,24546.0,98646.0
+Railgun,Privacy,8111.0,68431.0,336140.0
+ENS,Domains,8068.0,47270.0,328951.0
+Tonstakers LSD,Liquid Staking,8046.0,73784.0,330982.0
+Coinbase Wrapped Staked ETH,Liquid Staking,8022.0,56801.0,231091.0
+Pharaoh DLMM,Dexs,7927.0,219733.0,917129.0
+Unit,Bridge,7905.0,82449.0,492262.0
+Kraken Bitcoin Vault,Yield,7856.0,44566.0,177627.0
+Quasar Builder,Block Builders,7827.0,75927.0,349021.0
+Meteora Dynamic Bonding Curve,Launchpad,7810.0,43970.0,162619.0
+Beezie,Physical TCG,7754.0,153902.0,968650.0
+Photon,Trading App,7735.0,66903.0,605003.0
+Sui Foundation,Canonical Bridge,7648.0,53425.0,226408.0
+Saturn,Stablecoin Wrapper,7380.0,41978.0,246124.0
+StonkBrokers,Launchpad,7359.0,118770.0,1055057.0
+LI.FI Bridge Aggregator,Bridge Aggregator,7265.0,79348.0,347427.05
+GMX V2 Perps,Derivatives,7102.0,88473.0,702752.0
+Upshift,Onchain Capital Allocator,7093.0,42363.0,164552.0
+BaseStonk,Launchpad,7019.0,58995.0,355877.0
+Arcus Perps,Derivatives,6926.0,68415.0,339272.0
+bloXroute,MEV,6918.0,54616.0,281913.0
+nest CL,Dexs,6891.0,85298.0,547077.0
+Velodrome V3,Dexs,6834.0,55462.0,254322.0
+Ansem.io,Launchpad,6647.0,20147.28,2053425.28
+Rabby Perps,Interface,6596.0,61382.0,297103.0
+Injective,Chain,6455.0,47676.0,205842.0
+USDD,CDP,6437.0,44904.0,421447.0
+Project X,Dexs,6436.0,72057.0,370716.0
+PulseX V1,Dexs,6399.0,48373.0,248938.0
+Rainbow Wallet,Wallets,6369.0,51873.0,220655.0
+DYLI,Physical TCG,6219.0,43121.0,288591.0
+Mellow Restaking,Liquid Restaking,6199.0,23902.0,31601.0
+ICP,Chain,6113.0,47624.0,161568.0
+SX Bet,Prediction Market,6081.0,20352.0,37385.74
+Route,DEX Aggregator,6061.0,38196.0,38196.0
+Snuggle,Liquidity Manager,6038.0,81262.0,334205.0
+Marinade Native,Staking Pool,6022.0,40100.0,139748.0
+Flying Tulip Yield,Services,6017.0,27054.0,119171.0
+Overtime,Prediction Market,6002.0,22854.0,100113.0
+GIGA V3,Dexs,5976.0,88198.0,137365.0
+Trust Wallet Wallet,Wallets,5911.0,76120.0,399086.0
+Render Network BME,DePIN,5908.0,57983.0,192650.0
+SynFutures V3,Derivatives,5868.0,51346.0,234844.0
+PancakeSwap Prediction,Prediction Market,5865.0,44108.0,223835.0
+Sat Rush,Gamified Mining,5824.0,44226.0,109614.0
+Rabby Wallet,Wallets,5814.0,54079.0,247946.0
+Kinetiq kHYPE,Liquid Staking,5804.0,43553.0,190341.0
+Jupiter DCA,DCA Tools,5797.0,38281.0,102100.0
+Liquid Collective,Liquid Staking,5662.0,39674.0,161673.0
+Jupiter Lend,Lending,5618.0,43812.0,188721.0
+Aark Digital,Derivatives,5446.0,78313.0,246740.0
+HyperDash,Interface,5415.0,50316.0,131684.0
+SushiSwap Agg,DEX Aggregator,5392.0,30329.0,162079.0
+Minara AI Perps,Interface,5363.0,40907.0,170503.0
+Jupiter Staked SOL,Liquid Staking,5346.0,28751.77,117534.74
+Convex Finance,Yield,5321.0,81945.0,948485.0
+Usual USD0,RWA,5303.0,89602.0,278521.0
+moonshot.money,Trading App,5243.0,67813.0,295256.0
+Immunefi,Services,5180.0,22165.0,93565.0
+Immutable Orderbook,NFT Marketplace,5014.0,35153.0,147489.0
+Privacy Cash,Privacy,4984.0,32449.0,110419.0
+Tokenlon AMM,Dexs,4930.0,55562.0,349355.0
+Aave V2,Lending,4866.0,29392.0,102684.0
+GeckoTerminal,Interface,4836.0,25630.0,104017.0
+AlloX,DEX Aggregator,4817.0,6086.0,52303.0
+SHROOM Treasury,Liquidity Manager,4679.0,12665.0,12665.0
+Olympus DAO,Reserve Currency,4616.0,30849.0,161995.0
+Invo Perps,Interface,4610.0,48397.0,499863.0
+mETH Protocol,Liquid Staking,4597.0,29755.0,109271.0
+Miracle,Interface,4562.0,40149.0,166220.0
+Bankr,Interface,4555.0,231371.63,668203.17
+Pendle V2,Yield,4520.0,224699.0,580345.0
+Fluid Lite,Yield Aggregator,4507.0,28524.0,105643.0
+Perpl,Derivatives,4488.0,43016.0,280294.0
+Rapid Launch,Launchpad,4467.0,28753.0,133816.0
+ether.fi Liquid,Onchain Capital Allocator,4429.0,31114.0,117382.0
+Sport.fun,Prediction Market,4421.0,36734.0,113804.0
+GODL protocol,Gamified Mining,4305.0,44680.0,409517.0
+Apex Omni,Derivatives,4222.0,39957.0,224322.0
+fly.trade,Cross Chain Bridge,4220.0,44437.0,157627.0
+Velodrome V2,Dexs,4217.0,27435.0,88793.0
+Axie Infinity,Gaming,4201.0,27402.0,109644.0
+Mantle Index Four Fund,RWA,4118.0,29087.0,116070.0
+BULK,Derivatives,4043.0,11203.77,11203.77
+NAVI Lending,Lending,3949.0,40189.0,274326.0
+Lista CDP,CDP,3817.0,158883.0,275559.0
+Jito MEV Tips,MEV,3807.0,36588.0,173965.0
+Hylo Protocol,Dual-Token Stablecoin,3792.0,49172.0,164377.0
+Squeeze,Launchpad,3769.0,40905.0,104039.39
+Marinade Liquid Staking,Liquid Staking,3749.0,25843.0,102875.0
+Bitflow,Dexs,3746.0,19897.0,76845.0
+Trasia,Interface,3680.0,25236.0,122538.0
+four.meme,Launchpad,3622.0,58338.0,295326.0
+Liquid Perps,Interface,3619.0,33503.0,154553.0
+PayCash,Dexs,3522.0,22087.0,71502.0
+Quickswap Dex,Dexs,3509.0,30692.0,155910.0
+SHROOM Token,Meme,3497.0,99617.0,556306.0
+Bitway Earn,Basis Trading,3417.0,22594.0,117831.0
+Aave V4,Lending,3396.0,22174.0,72477.0
+Saphyre V3,Dexs,3373.0,32977.0,122687.0
+Tread.fi Perps,Interface,3360.0,24570.0,81156.0
+Kinetiq Markets,Interface,3235.0,32911.0,79029.0
+Starknet,Chain,3228.0,51355.0,212328.0
+dYdX V4,Derivatives,3213.0,41751.0,280309.0
+Circle CCTP,Bridge,3204.0,37211.0,176058.0
+Filecoin,Chain,3167.0,28377.0,68583.0
+OneKey Perps,Interface,3150.0,19116.0,143433.0
+Mass,Interface,3148.0,13249.0,66381.0
+K3 Capital,Risk Curators,3083.0,19788.0,79309.0
+BidGrid,Gamified Mining,3001.0,16324.0,176794.0
+Marinade Select,Staking Pool,2999.0,20597.0,78079.0
+HyperLend Pooled,Lending,2995.0,21040.0,107442.0
+Aptos,Chain,2977.0,22275.0,92208.0
+Lista Lending,Lending,2959.0,20412.0,279753.0
+Securitize Tokenized AAA CLO Fund,RWA,2931.0,20508.0,87728.0
+BONKbot,Telegram Bot,2922.0,13519.0,49988.0
+Hyperliquid Strategies HYPE Staking,Staking Pool,2883.0,19546.0,71101.0
+CIAN Yield Layer,Yield Aggregator,2880.0,20965.0,76178.0
+Accountable,Uncollateralized Lending,2836.0,18530.0,97479.0
+AlphaSec Spot,Dexs,2797.0,26006.0,138916.0
+LP Agent,Liquidity Automation,2767.0,28514.0,60156.0
+Resupply,Lending,2748.0,17372.0,77024.0
+Cetus CLMM,Dexs,2727.0,23735.0,109350.0
+Avant avUSD,Basis Trading,2623.0,19074.0,85965.0
+Helio,Payments,2610.0,99954.0,158394.0
+ADEN,Interface,2488.0,18079.0,83129.0
+Abstract,Chain,2465.0,19915.0,116347.0
+Compound V2,Lending,2456.0,14965.0,59470.0
+Avalanche,Chain,2441.0,29180.0,123141.0
+Invesco USTB,RWA,2438.0,17274.0,79559.0
+Euler V2,Lending,2382.0,16506.0,44979.0
+o1.exchange Trading Terminal,Trading App,2323.0,13335.0,54832.0
+Ape Church,Luck Games,2312.0,18975.0,65352.0
+Sentry,Launchpad,2311.0,24010.0,107982.0
+Topaz CL,Dexs,2273.0,27391.0,63455.0
+Wildcat Protocol,Uncollateralized Lending,2271.0,16072.0,71342.0
+Streamflow,Payments,2271.0,66779.0,148202.0
+THORSwap,DEX Aggregator,2270.0,39808.0,205869.0
+Noon,Yield,2267.0,11015.0,48442.0
+Telegram Wallet,Interface,2246.0,28448.0,224882.0
+Ave.ai,Trading App,2219.0,14359.0,40349.0
+Insilico Terminal,Interface,2117.0,34947.0,169082.0
+Bitwise USCC,Basis Trading,2114.0,14251.0,47599.0
+Nansen-HypurrCollective HYPE Staking,Staking Pool,2111.0,15517.0,63621.0
+JPool,Liquid Staking,2001.0,10733.59,80662.59
+OpenEden TBILL,RWA,1996.0,13992.0,60696.0
+ASXN HYPE Staking,Staking Pool,1971.0,14785.0,61459.0
+Alandale V3,Dexs,1966.0,28471.0,103052.48999999999
+Lista Liquid Staking,Liquid Staking,1938.0,34293.0,97308.0
+DEXTools,Coins Tracker,1913.0,17735.0,81460.0
+Stake DAO Yield,Yield,1912.0,18188.0,78835.01999999999
+NTM.ai,SoFi,1902.0,13564.0,50109.0
+Fusion by IPOR,Yield Aggregator,1853.0,10818.0,26384.0
+Byreal,Dexs,1827.0,17410.0,60918.0
+Defi Saver Asset Management,CDP Manager,1798.0,20904.0,193309.94
+Cooler Loans,Lending,1758.0,12472.0,52796.0
+Benqi Staked Avax,Liquid Staking,1754.0,13388.0,70830.0
+Suilend,Lending,1741.0,11666.0,77025.0
+Balancer V2,Dexs,1737.0,11596.0,50626.0
+JustLend V1,Lending,1700.0,10695.0,47285.0
+HawkFi,Liquidity Manager,1694.0,11906.0,25365.0
+xExchange,Dexs,1638.0,4772.0,11803.0
+Matcha,Trading App,1600.0,15212.0,102490.0
+Nexus Mutual,Insurance,1593.0,17202.17,56357.259999999995
+MetaMask USD,Stablecoin Issuer,1545.0,10250.0,47306.0
+Migrate.Fun,Interface,1538.0,17087.0,19516.11
+Stakee,Liquid Staking,1533.0,14279.0,61808.770000000004
+Drift Staked SOL,Liquid Staking,1529.0,7803.74,29995.63
+OP Mainnet,Chain,1525.0,15081.0,66263.0
+PulseX V2,Dexs,1525.0,10383.0,55604.0
+Cook Market,Launchpad,1504.0,4243.0,4243.0
+MorpheusAI,AI Agents,1496.0,10464.0,41857.0
+Hydration Lending,Lending,1482.0,10903.0,45831.0
+Dexalot,Chain,1478.0,9569.0,38567.19
+Traderline Predictions,Interface,1469.0,7313.0,36773.0
+RockawayX,Risk Curators,1455.0,9945.0,30552.0
+Aera V3,Onchain Capital Allocator,1439.0,15068.0,129259.0
+CheesePad,Launchpad,1435.0,2111.88,23168.24
+The Vault Liquid Staking,Liquid Staking,1435.0,5994.12,24915.17
+OpenLedger,Decentralized AI,1432.0,9097.0,36823.0
+OPINION,Prediction Market,1429.0,10309.0,45471.0
+KAIO,RWA,1424.0,9968.0,42267.0
+Alchemix V3,Synthetics,1422.0,13183.0,84824.0
+Bucket Shop,Yield,1418.0,12568.0,64528.0
+Lighter Spot,Dexs,1414.0,20483.0,86572.0
+Beefy,Yield Aggregator,1413.0,25664.0,88059.0
+Bybit Staked SOL,Liquid Staking,1400.0,6777.719999999999,35733.55
+Clearstar,Risk Curators,1398.0,10694.0,41934.0
+Origin Ether,Liquid Staking,1390.0,9767.0,40047.0
+Imperator.co HYPE Staking,Staking Pool,1362.0,10006.0,41594.0
+SushiSwap V3,Dexs,1356.0,16077.0,132206.0
+StakeWise V3,Liquid Staking,1340.0,9002.0,36783.0
+Livepeer,Video Infrastructure,1335.0,13043.0,89646.0
+Rhea Lend,Lending,1330.0,10599.0,47865.0
+Boros,Interest Rate Derivatives,1314.0,8269.0,34953.0
+Metascalp Perps,Interface,1312.0,12639.0,74946.0
+PagCrypto,Payments,1310.0,27771.0,136539.52000000002
+Apollo Diversified Credit Securitize Fund,RWA,1306.0,9157.0,39231.0
+TRUE DEX,Derivatives,1304.0,168723.0,530122.0
+stHYPE,Liquid Staking,1297.0,9492.0,38855.0
+Pez Family,Launchpad,1293.0,126033.0,299973.0
+Minswap DEX,Dexs,1287.0,8479.0,41844.0
+Gondi V3,NFT Lending,1278.0,6021.0,35589.0
+entropy.io,Interface,1277.0,9013.0,37821.0
+Shoebill V2,Lending,1260.0,9307.0,28047.0
+Curvance,Lending,1257.0,10220.0,40636.0
+AGNT,Launchpad,1254.0,12126.0,17329.08
+LetsCash,Launchpad,1239.0,25411.0,196768.0
+Moonshot Create,Launchpad,1239.0,10310.0,63147.0
+Pier Two HYPE Staking,Staking Pool,1237.0,9129.0,38749.0
+Bags,Launchpad,1233.0,41202.0,892943.0
+Temple,Dexs,1232.0,9122.0,39747.0
+Validao HYPE Staking,Staking Pool,1229.0,8982.0,37517.0
+B-Harvest HYPE Staking,Staking Pool,1225.0,8936.0,37207.0
+ElfomoFi,Dexs,1224.0,9636.0,19726.3
+Blackhole CLMM,Dexs,1222.0,12717.0,64027.0
+Symbiosis,Cross Chain Bridge,1221.0,29770.0,103719.0
+Stellar,Chain,1219.0,9870.0,40613.0
+USDT0-Luganodes HYPE Staking,Staking Pool,1213.0,8880.0,36753.0
+GAIB,RWA,1211.0,7762.0,37520.0
+Strike Finance Perpetuals,Derivatives,1190.0,16914.0,68203.0
+Moonwell Lending,Lending,1189.0,6767.0,93481.0
+Legend Trade,Interface,1188.0,12766.0,60706.0
+alphagrowth,Risk Curators,1186.0,8260.0,34477.0
+HypurrCorea HYPE Staking,Staking Pool,1174.0,8461.0,35489.0
+AlphaFi Lending,Lending,1172.0,9080.0,94086.0
+Near,Chain,1167.0,10080.0,37300.0
+DexFi Aggregator,Yield Aggregator,1159.0,12504.0,41258.0
+PancakeSwap Lottery,Luck Games,1135.0,7114.84,20119.5
+Sui,Chain,1123.0,9885.0,43244.0
+Phase Delegation,Liquid Staking,1122.0,5700.01,21652.02
+X Layer,Chain,1112.0,14919.0,45658.0
+Linea,Chain,1110.0,7856.0,36608.0
+Rango,Bridge Aggregator,1105.0,4378.0,12128.21
+STON.fi,Dexs,1100.0,9328.0,66096.0
+Derive V2,Derivatives,1092.0,10803.0,78228.0
+Liqwid,Lending,1069.0,7447.0,22965.0
+Bluefin Spot,Dexs,1067.0,9263.0,42318.0
+THENA INTEGRAL,Dexs,1058.0,11647.0,65585.0
+HypurrScan HYPE Staking,Staking Pool,1056.0,8025.0,33388.0
+Telemetry,Trading App,1054.0,5348.0,23596.0
+Current,Lending,1047.0,7253.0,31168.0
+Aquarius Stellar,Dexs,1043.0,10559.0,66104.0
+Liquity V1,CDP,1022.0,1568.68,19339.77
+Axiom Perps,Interface,1016.0,6227.0,28927.0
+Gauntlet,Risk Curators,1006.0,7264.0,33148.0
+Jetbit,Derivatives,995.0,4772.0,33345.0
+Forward Industries SOL,Liquid Staking,995.0,4122.0,14868.01
+P2P.me,Payments,989.0,10107.0,37914.0
+Tree News,SoFi,987.0,28821.0,76647.0
+Haedal Protocol,Liquid Staking,986.0,7284.0,30635.0
+STKESOL by SOL Strategies,Liquid Staking,966.0,4545.68,19296.65
+BlazeStake,Liquid Staking,966.0,5839.719999999999,22561.800000000003
+MineBean,Gamified Mining,963.0,7298.0,45688.0
+DODO AMM,Dexs,959.0,19792.0,40739.0
+Smithii,Launchpad,939.0,7131.0,29172.0
+Drake Exchange,Derivatives,927.0,3502.48,4369.2
+TON,Chain,922.0,6871.0,42476.0
+Vexy,NFT Marketplace,901.0,5467.0,24749.18
+DoubleZero Staked SOL,Liquid Staking,899.0,3684.37,48225.87
+What The Hook,Liquidity Automation,889.0,10742.0,36471.0
+Astros Perp,Derivatives,883.0,6615.0,19185.0
+Benqi Lending,Lending,850.0,6462.0,25868.0
+Extra Finance Leverage Farming,Leveraged Farming,849.0,6972.0,37133.0
+RayBot,Telegram Bot,847.0,8424.0,30865.0
+PAIR,Launchpad,845.0,18487.0,174038.0
+Vesper,Yield Aggregator,841.0,1022.31,6499.789999999999
+Lombard LBTC,Restaked BTC,822.0,20802.0,62060.0
+Orvex,Dexs,819.0,9042.0,39026.0
+JagPool Staked SOL,Liquid Staking,800.0,3176.0300000000007,13104.51
+Meteora DAMM V1,Dexs,790.0,6629.0,33810.0
+Futarchy AMM,Dexs,789.0,19848.0,140946.0
+THENA FUSION,Dexs,787.0,4989.0,21768.0
+Hyperithm,Risk Curators,781.0,5873.0,21188.0
+Infinex Perp,Interface,778.0,6206.0,26990.0
+HyperSwap V2,Dexs,774.0,7278.0,47047.55
+Mainstreet,Yield,773.0,4943.0,16079.0
+Aborean CL,Dexs,772.0,4149.0,25432.3
+Valhalla,Liquidity Automation,770.0,6520.0,11543.0
+Hybra V4,Dexs,766.0,7593.0,56131.0
+vfat.io,Yield Aggregator,765.0,7763.0,35433.0
+Kinetiq Earn,Yield Aggregator,752.0,4919.0,18950.0
+Kittenswap Algebra,Dexs,742.0,7485.0,36969.0
+Gate SOL,Liquid Staking,736.0,2982.77,11884.100000000002
+Bluefin Pro,Derivatives,736.0,5045.0,19387.0
+Umia,Launchpad,730.0,22070.0,143166.11
+Yearn Finance,Yield Aggregator,729.0,13999.0,43125.0
+dfdvSOL,Liquid Staking,729.0,2988.37,7368.150000000001
+Echelon Market,Lending,720.0,5010.0,21893.0
+Ostium,Derivatives,718.0,6023.0,546366.0
+SUNSwap V2,Dexs,717.0,8126.0,49008.0
+SOFA.org,Options,700.0,924.47,5642.0199999999995
+Raphael Exchange CL,Dexs,694.0,2814.0,2814.0
+Bounce.Tech,Derivatives,688.0,8883.0,90263.6
+tBTC,Decentralized BTC,687.0,13825.0,44454.24
+PotatoSwap V2,Dexs,682.0,5244.0,14072.0
+EtherFi Borrowing Market,Lending,677.0,4787.0,31807.0
+9mm V3,Dexs,675.0,3913.0,18166.0
+Tydro,Lending,674.0,4759.0,18445.0
+SOCKET Protocol,Bridge Aggregator,656.0,6515.0,22158.0
+Bungee Bridge Aggregator,Bridge Aggregator,656.0,6515.0,22294.0
+Exponent Yield Exchange,Yield,652.0,8721.0,44562.0
+DeDust,Dexs,651.0,3844.0,30066.0
+Turbos,Dexs,642.0,7524.0,32586.0
+LiquidSpirit-Hydromancer-RektGang HYPE Staking,Staking Pool,641.0,4713.0,19579.0
+HyperSwap V3,Dexs,639.0,5958.0,46320.0
+Arcadia V2,Liquidity Manager,631.0,7370.0,25912.0
+DeBank Cloud,Developer Tools,628.0,7871.0,34712.0
+Ink,Chain,622.0,6452.0,26538.0
+Bitwise HYPE Staking,Staking Pool,612.0,4522.0,18405.0
+foxify,Derivatives,611.0,4122.0,12622.0
+PumpBox,Physical TCG,611.0,20122.28,51794.09
+up v2,Dexs,611.0,5175.0,30629.0
+Save,Lending,598.0,3735.0,13797.0
+TokenWorks,NFT Automated Strategies,591.0,14143.97,55854.97
+Shadow Exchange CLMM,Dexs,591.0,5325.0,34691.0
+Gearbox,Lending,588.0,606.68,3602.2100000000005
+Purrposeful HYPE Staking,Staking Pool,587.0,4296.0,17908.0
+MoonBot,Interface,570.0,10847.0,64373.0
+Osmosis DEX,Dexs,565.0,9800.0,39403.0
+BendDAO Lending V1,NFT Lending,556.0,3899.0,16045.0
+Fulcrom Perps,Derivatives,555.0,10404.0,69829.68
+Helius Staked SOL,Liquid Staking,546.0,2436.9300000000003,9164.54
+Hyperlane,Cross Chain Bridge,537.0,6159.0,23070.0
+clanker,Launchpad,533.0,10675.0,54657.0
+Mantle,Chain,532.0,3922.0,11440.0
+Kinetic,Lending,521.0,4005.0,14765.0
+Hylo LSTs,Liquid Staking,520.0,2091.54,9645.14
+Fluid DEX,Dexs,519.0,4775.0,28760.0
+Rise.rich,Launchpad,514.0,4772.0,65123.0
+Nerona,Yield Aggregator,514.0,2608.0,11954.0
+Rhea Dex,Dexs,508.0,13453.0,35540.0
+Meria HYPE Staking,Staking Pool,508.0,3573.0,14377.0
+GIGA V2,Dexs,504.0,3670.74,5087.3
+LiquidCore,Dexs,503.0,5833.0,52609.0
+Definity Staked SOL,Liquid Staking,494.0,1959.53,7656.01
+Lombard Vaults,Onchain Capital Allocator,493.0,3459.0,16890.0
+Neverland,Lending,489.0,3522.0,15219.0
+Hyperbeat USD,Lending,488.0,2776.0,11898.0
+ClaimRush,Gamified Mining,486.0,18364.0,74215.0
+Dexly Trade,Interface,474.0,3879.0,17191.0
+Blockchain Wallet Perps,Interface,467.0,46017.0,303865.0
+Metronome Synth,Synthetics,458.0,6646.82,112840.94
+Felix Vaults,Onchain Capital Allocator,453.0,3624.0,28118.0
+Ekubo,Dexs,450.0,4659.0,18067.45
+Armitage by Wintermute,Risk Curators,449.0,3290.0,10074.0
+Ramses DLMM,Dexs,448.0,2741.0,14927.0
+Layer3,Foundation,445.0,2432.0,12224.0
+Gate Swap Spot,Dexs,442.0,2205.0,10913.0
+Liquity V2,CDP,439.0,3863.0,37561.0
+Near Perps,Interface,434.0,6543.0,21964.0
+Re7 Labs,Risk Curators,426.0,2881.0,10212.0
+Infrared Finance,Liquid Staking,425.0,2696.0,7390.0
+VVS Standard,Dexs,418.0,7675.0,35393.0
+Atomic Perps,Interface,418.0,3991.0,21959.0
+EasyA Kickstart,Launchpad,415.0,1246.0,29248.0
+MEVX,Telegram Bot,411.0,4956.0,45569.0
+infiniFi,Yield,401.0,3089.0,13919.0
+Bullpen Perps,Interface,401.0,3120.0,33588.0
+Looped Hype,Yield,401.0,588.0,3567.0
+Toros,Yield,398.0,2432.0,10972.43
+Pear Interface,Interface,395.0,5263.0,64590.0
+AlphaQ,Dexs,395.0,4489.0,17237.0
+BasedApp,Interface,394.0,7517.0,185882.0
+Kreo,Interface,387.0,3029.0,16198.42
+Hyperbeat-P2P-Hypio HYPE Staking,Staking Pool,384.0,2806.0,11398.0
+Folks Finance Lending,Lending,382.0,2006.0,4446.0
+NodeOps,DePIN,380.0,1092.0,5875.0
+Hyperbeat Earn,Yield Aggregator,379.0,4253.0,15013.0
+Orynth,Launchpad,375.0,1051.0,3767.0
+Dreamcash Interface,Interface,373.0,5356.0,39028.0
+b14g,Restaking,372.0,2378.0,10501.85
+Arbitrum Timeboost,MEV,371.0,2459.0,19024.0
+Paragon,Interface,370.0,2991.0,11742.0
+aeon,AI Agents,367.0,6660.0,39977.0
+dextrabot,Interface,366.0,2912.0,9172.42
+Hakutora,Risk Curators,358.0,2628.0,10699.0
+Avant avETH,Onchain Capital Allocator,350.0,2720.0,11552.0
+MEV Capital,Risk Curators,347.0,2277.0,7955.0
+Pull.fun,Physical TCG,347.0,44445.0,186437.0
+Kodiak V3,Dexs,347.0,2658.0,14745.0
+Neutral Trade,Onchain Capital Allocator,347.0,2437.0,5965.0
+RealT RMM Marketplace V2,Lending,342.0,2326.0,5865.0
+DipCoin Perps,Derivatives,336.0,5880.0,24877.0
+Maxbid,Trading App,335.0,2996.0,9730.0
+Pocket Universe,Security Extension,326.0,4898.0,46807.0
+Kasu,Uncollateralized Lending,320.0,2241.0,9814.0
+Hookers,Launchpad,320.0,4360.0,19473.0
+Mantle Restaking,Liquid Restaking,318.0,28365.0,100005.0
+VanEck Treasury Fund,RWA,318.0,2223.0,13967.0
+ICPSwap,Dexs,310.0,2590.0,7843.0
+ZeroLend Vaults,Risk Curators,306.0,2133.0,9102.0
+Hydration DEX,Dexs,304.0,6620.0,25956.0
+GLIF,Liquid Staking,299.0,1028.0,5140.0
+UNCX Network V2,Token Locker,295.0,1223.99,5024.459999999999
+Mystic Finance Lending,Lending,294.0,2655.0,10568.0
+SoSoValue Basis,Basis Trading,294.0,2058.0,8827.0
+Verio,Liquid Staking,292.0,1018.0,4103.68
+token.select,Launchpad,289.0,3303.0,30367.22
+Rujira Trade,Dexs,287.0,1932.67,16021.44
+Chamber Vaults,Indexes,286.0,1353.0,19035.170000000002
+Kamino Liquidity,Liquidity Manager,285.0,6061.0,37953.0
+XRPL,Chain,282.0,3816.0,14532.0
+Synthetix V4,Derivatives,271.0,2125.0,6487.0
+Kaching,Luck Games,270.0,1724.0,11825.0
+Vultisig,DEX Aggregator,266.0,896.52,2535.3900000000003
+Solana Name Service,Domains,261.0,1542.0,8659.24
+Jupiter Studio,Launchpad,259.0,6512.0,69036.0
+1inch Aqua,Dexs,258.0,2349.0,8147.97
+Enosys AMM V3,Dexs,254.0,1697.57,18824.28
+Yearn Curating,Risk Curators,253.0,1713.0,7562.0
+ZKsync Era,Chain,251.0,2180.0,10323.0
+Zest V2,Lending,248.0,1721.0,5498.48
+Reya Perps,Derivatives,248.0,1637.0,9292.0
+LeverUp,Derivatives,246.0,3490.0,15698.0
+Bullpen Prediction Markets,Interface,243.0,1184.9,6722.57
+Nad.fun V1,Launchpad,242.0,8861.0,59300.8
+GETH,Liquid Staking,241.0,1679.0,6888.0
+Camelot V2,Dexs,241.0,1818.0,6982.34
+Enzyme Finance,Indexes,239.0,2512.03,11431.03
+Space and Time,Developer Tools,237.0,1697.0,6085.0
+Origin Dollar,Yield Aggregator,235.0,1648.0,6568.0
+Apexliquid Perps,Interface,234.0,1941.0,12117.0
+Hamilton Lane Senior Credit Opportunities Securitize Fund,RWA,233.0,1631.0,7045.0
+Veno Finance,Liquid Staking,233.0,1609.0,6889.49
+Curve LlamaLend V2,Lending,233.0,1652.0,5762.0
+Supercexy,Interface,229.0,377.53,1568.6899999999998
+AlphaTicks HYPE Staking,Staking Pool,225.0,1648.0,7000.0
+Balancer V3,Dexs,216.0,2122.0,10604.0
+Phantom SOL,Liquid Staking,214.0,2484.0,14508.0
+Loopr,Yield,214.0,686.0,5765.0
+Strata Markets,Yield,214.0,3289.0,15835.0
+WhatExchange,Interface,211.0,1771.0,9314.0
+Vergex Perps,Interface,210.0,4033.0,15482.0
+Crypto.com Liquid Staking,Liquid Staking,210.0,1660.46,8212.25
+Takara Lend,Lending,208.0,1272.0,5307.0
+YeNo,Interface,205.0,1324.25,2751.71
+Arkada,SoFi,203.0,1323.0,7245.0
+Tria Perps,Interface,202.0,2366.0,13583.0
+HertzFlow,Derivatives,202.0,2190.0,5259.71
+Ramses Legacy V2,Dexs,202.0,7298.0,95592.92
+Velora,DEX Aggregator,200.0,3794.0,18141.510000000002
+Jupiter Offerbook,Lending,199.0,724.0,3393.0
+Stride,Liquid Staking,198.0,1533.0,5963.0
+Piku Finance,Basis Trading,195.0,1198.0,7264.0
+Ensuro,Insurance,195.0,1772.0,7651.0
+Swell Liquid Staking,Liquid Staking,190.0,717.0,3016.0
+Stader,Liquid Staking,190.0,6559.0,24917.0
+Aori,Cross Chain Bridge,186.0,1460.0,7092.74
+Figure Markets Exchange,OTC Marketplace,182.0,4873.0,13347.31
+Katana DEX,Dexs,180.0,884.94,4888.38
+Hyperbeat Liquid Bank Perps,Interface,175.0,1151.0,12475.0
+Rialto Aggregator,DEX Aggregator,175.0,5044.0,22584.0
+M0,Stablecoin Issuer,174.0,651.56,5679.9400000000005
+Fidelity Digital Interest Token,RWA,174.0,1262.0,7362.0
+Alt Fun,Launchpad,171.0,1162.55,40508.43000000001
+Api3,Risk Curators,170.0,1270.0,5442.0
+Katana DEX V3,Dexs,170.0,407.0,1950.0
+Wallet V,Interface,170.0,3489.0,24228.0
+Treehouse Protocol,DOR,167.0,937.0,5286.05
+Polygun,Interface,166.0,1887.0,7398.0
+Cardano,Chain,166.0,1781.0,8479.0
+Capyfi,Lending,166.0,976.0,4048.59
+Infinex Spot,Dexs,162.0,2310.0,10529.0
+Tinyman,Dexs,161.0,930.0,3687.0
+Aborean AMM,Dexs,161.0,510.52000000000004,2522.0
+MagicSea LB,Dexs,159.0,737.67,4871.56
+WooFi Pro Perps,Interface,158.0,2090.0,16997.0
+Vena Finance,Lending,158.0,1113.0,4693.0
+Supernova CL,Dexs,157.0,2332.0,11336.44
+Lyra Protocol,Trading App,156.0,958.7,2951.63
+WunderTrading Perps,Interface,155.0,2438.0,14255.0
+THORWallet,DEX Aggregator,151.0,2603.0,18388.0
+Superform,Yield Aggregator,150.0,353.84999999999997,1538.9599999999998
+Obol,Staking Pool,149.0,-4307.0,-566.0
+Panoptic V2,Options,149.0,1274.0,5392.48
+Binaryx Platform,RWA,145.0,311.37,12031.979999999998
+Camelot V3,Dexs,144.0,1720.0,8129.71
+Somnia,Chain,141.0,1010.0,3619.0
+SparkDEX V4,Dexs,137.0,1890.0,20513.0
+MatrixDock STBT,RWA,134.0,938.0,4000.0
+OpenEden USDO,RWA,134.0,2450.0,14750.0
+StockRip,Gamified Mining,134.0,3246.0,31558.3
+W-DEX,Dexs,132.0,2615.85,9834.69
+Momentum,Dexs,131.0,1496.0,7247.0
+ShMonad,Liquid Staking,130.0,959.0,4641.0
+Solayer Restaking,Restaking,130.0,553.11,982.21
+EVplusAI Predictions,Interface,130.0,602.17,4334.99
+Rainbow Predictions,Interface,129.0,857.44,3369.4299999999994
+Cetus DLMM,Dexs,128.0,1464.0,5847.0
+Taiko,Chain,128.0,505.0,1615.76
+cro.trade Perps,Interface,128.0,1425.0,19667.0
+Feather,Risk Curators,127.0,953.0,4659.0
+Creator Bid,AI Agents,125.0,1727.26,10877.13
+RHEA LST,Liquid Staking,124.0,896.0,3275.9
+SaucerSwap V2,Dexs,124.0,2460.0,12897.0
+Cantex,Dexs,124.0,1140.57,9779.57
+topblast.lol,Launchpad,123.0,4713.0,45016.0
+HyperX Perps,Interface,123.0,1690.0,8732.0
+Galaxy Curation,Risk Curators,123.0,858.0,3642.6
+ZORA Coins,Launchpad,122.0,834.0,6359.0
+Plasma,Chain,120.0,2700.0,13763.0
+SunPump,Launchpad,120.0,11434.0,80420.0
+YieldNest,Onchain Capital Allocator,118.0,468.0,6174.299999999999
+RateX DEX,Yield,116.0,847.08,6258.08
+lockin,Trading App,113.0,415.43,795.6300000000001
+Piteas,DEX Aggregator,111.0,7282.0,68431.0
+Etherex CL,Dexs,110.0,1321.0,5419.0
+DexLab,Launchpad,110.0,140.0,140.0
+Vault Bridge,Risk Curators,109.0,833.0,3359.0
+ThalaSwap V3,Dexs,108.0,1512.0,11761.0
+Valdora Finance,Liquid Staking,106.0,801.0,3637.0
+Bucket Protocol V2,CDP,106.0,3011.0,15707.469999999998
+Moonwell Vaults,Onchain Capital Allocator,105.0,746.0,4379.0
+B.Protocol Curator,Risk Curators,105.0,746.0,4374.0
+Jade,Gamified Mining,104.0,654.0,4489.0
+AlphaPing,Risk Curators,104.0,347.0,1182.0
+Polytrader,Interface,104.0,516.65,2169.2300000000005
+Kodiak Perps,Interface,104.0,530.95,926.49
+Storm Trade,Derivatives,103.0,1203.0,7225.0
+Astro,Luck Games,103.0,108.97,774.5399999999998
+Owly,Interface,102.0,788.0,4204.78
+THORChain,Chain,101.0,2691.0,7347.0
+RWA Perp,Interface,101.0,564.0,1088.3
+Scallop Lend,Lending,100.0,806.0,24341.0
+Joe DEX,Dexs,99.5,857.91,3217.87
+Contango V2,Derivatives,99.47,432.89,1960.31
+Metaplex,Launchpad,98.0,25806.0,227429.0
+Ember Protocol,Onchain Capital Allocator,98.0,485.0,2032.0
+Mezo Borrow,CDP,97.49,1175.85,4709.51
+OpenTrade,RWA,97.0,682.0,3216.0
+Dswap,Dexs,94.09,400.92,3189.92
+WaterNeuron,Liquid Staking,94.0,638.0,2355.0
+ALEX,Dexs,94.0,562.0,3528.3199999999997
+Avici,Crypto Card Issuer,94.0,1001.0,8372.0
+ZyFAI,AI Agents,93.15,1404.58,6691.259999999999
+Carbon Defi,Dexs,92.1,1153.12,4132.67
+OroSwap,Dexs,92.0,762.0,3933.0
+Gamma,Liquidity Manager,91.15,1068.8,6913.719999999999
+Hipo,Liquid Staking,90.0,447.03,447.04
+Project 0,Lending,90.0,629.0,2621.0
+Bedrock uniBTC,Anchor BTC,90.0,11.98,816.3899999999998
+pvp.trade,Interface,89.0,2457.0,16891.0
+Kumbaya,Dexs,89.0,1090.0,5223.0
+marginfi Lending,Lending,89.0,627.0,1266.0
+PulseX StableSwap,Dexs,88.0,545.0,2723.0
+Lendle Pooled Markets,Lending,87.0,1664.0,6013.0
+Clutch Anvil AMM,Dexs,86.95,761.06,10681.5
+Lagoon,Onchain Capital Allocator,86.17,606.28,2989.4399999999996
+Telos Consilium,Risk Curators,86.0,602.0,2602.0
+Sablier Legacy,Payments,85.19,636.03,1874.6700000000003
+Minswap Aggregator,DEX Aggregator,85.0,553.0,4848.0
+Berachain,Chain,84.0,574.0,3134.0
+Rainbow Perps,Interface,83.0,2099.0,24836.0
+Trends Legacy,Launchpad,82.0,1149.0,3200.41
+SyncSwap,Dexs,81.04,869.6,4633.849999999999
+BOB,Chain,80.23,531.58,644.35
+DefiTuna Liquidity,Liquidity Manager,80.0,524.0,7593.99
+Nansen Perps,Interface,80.0,485.0,6551.0
+CallPut,Options,79.39,2119.4300000000003,17481.85
+PoolTogether V5,Yield Lottery,78.67,874.76,3981.93
+O2 Exchange,Dexs,78.0,523.0,1398.0
+Ravenhood,Volume Boosting,75.12,1297.95,16135.08
+Ready Cards,Physical TCG,73.0,2300.0,25747.0
+Haystack,Trading App,72.0,285.49,807.8000000000001
+SundaeSwap V2,Dexs,72.0,718.0,3626.0
+Frontier,Launchpad,72.0,2878.92,3531.8199999999997
+Sperax USD,Yield Aggregator,71.83,0.2,181.62000000000003
+VVS Flawless,Dexs,71.8,952.0699999999999,5255.07
+LilSwap,DEX Aggregator,71.72,359.5,5134.46
+Lavarage,Derivatives,71.0,672.0,6574.0
+Farcaster SoFi,SoFi,71.0,491.0,2588.01
+DIEM Relay,Yield,71.0,409.0,1277.03
+Quickswap V3,Dexs,68.02,736.02,7007.030000000001
+Walrus Protocol,Developer Tools,68.0,347.0,3338.0
+Basenames,Domains,67.8,609.94,4467.57
+Sonic,Chain,67.0,964.0,3199.0
+FanX Protocol,Dexs,66.72,424.1,2227.36
+Concrete,Onchain Capital Allocator,65.02,1256.1,17182.170000000002
+Joe V2.2,Dexs,64.83,743.22,4164.68
+Hydro Lending,Lending,64.0,147.0,682.77
+Dexari,Interface,64.0,699.0,10656.0
+Makina,Onchain Capital Allocator,63.68,317.75,1363.3200000000002
+Blackhole AMM,Dexs,62.97,1267.37,6021.71
+POWERCITY Earn Protocol,CDP,62.67,7253.0,8802.85
+Morph,Chain,62.55,1472.84,2826.25
+Folks Finance xChain,Lending,61.99,347.64,1926.0900000000004
+TAU Labs,Risk Curators,61.36,395.76000000000005,1998.23
+Consensus Liquidity DEX,Dexs,61.33,126.87000000000002,400.59999999999997
+Nado Spot,Dexs,61.0,413.0,3151.0
+Tezos,Chain,61.0,439.0,8325.0
+Solauncher,Launchpad,60.67,112.41,806.31
+Volo LST,Liquid Staking,60.57,761.31,3419.5499999999997
+Allbridge Core,Bridge,60.13,1582.1699999999998,3827.9800000000005
+HypurrQuant,DEX Aggregator,60.0,498.0,4296.0
+Illuvium,Gaming,59.55,656.0400000000001,2981.55
+CRSHMARKET,Prediction Market,59.44,725.76,35328.23
+NextRare,Physical TCG,59.38,2448.0,11302.0
+DefiTuna AMM,Dexs,59.0,719.0,2052.0
+PERPTools,Interface,58.0,224.0,2388.0
+TONCO V2,Dexs,55.57,1248.1399999999999,3400.6
+Lynex V2,Dexs,54.0,605.0,4430.0
+Bonk Staked SOL,Liquid Staking,54.0,301.25,3756.92
+opBNB,Chain,53.0,349.0,1841.0
+Ryze Protocol,Dexs,52.04,158.76000000000002,941.5899999999999
+Kaia,Chain,52.0,368.0,1901.0
+AllBlue V3,Dexs,50.93,480.62,3713.56
+LiquidBots,Interface,50.0,376.0,2374.0
+Ethena USDe,Basis Trading,49.89,785.1700000000001,9192.64
+Alpha Arcade,Prediction Market,49.05,110.08000000000001,447.24999999999994
+Banana Gun,Telegram Bot,49.0,1818.0,10431.0
+Preddy,Interface,48.9,570.29,6158.110000000001
+Lista DEX,Dexs,48.77,803.39,4338.07
+XO Market,Prediction Market,48.55,303.63,3947.6100000000006
+HOPR,Privacy,48.17,327.84,1274.2
+Soneium,Chain,48.0,294.0,1825.3899999999999
+Flying Tulip ftUSD,Yield Aggregator,47.47,541.98,2125.7899999999995
+Shift Protocol,Onchain Capital Allocator,47.01,112.07,1143.57
+Senpi Perps,Interface,47.0,436.0,5162.0
+Swell Liquid Restaking,Liquid Restaking,47.0,271.0,1002.97
+zERC20,Privacy,47.0,647.53,2192.8599999999997
+Bancor V3,Dexs,46.81,740.25,2976.31
+Arena Perps,Interface,46.0,2503.0,4793.57
+BasePaint,Services,45.91,282.34,1224.1899999999998
+Lynx,Derivatives,45.19,144.39,1190.36
+Sudoswap V1,NFT Marketplace,45.0,106.00999999999999,416.91
+CCXT Perps,Interface,45.0,293.0,3227.0
+Avant avBTC,Onchain Capital Allocator,45.0,615.11,2770.2400000000002
+Tradoor Perps Aggregator,Interface,44.0,653.0,3357.5699999999997
+Beets LST,Liquid Staking,42.6,313.39,1303.39
+BeaverBuild,Block Builders,42.55,1316.56,24781.12
+Equalizer Exchange,Dexs,42.39,484.61,2355.36
+Deepstate,Dexs,42.1,2469.3500000000004,169406.35
+Sharky,NFT Lending,41.73,314.82,1330.5300000000007
+Blast,Chain,41.0,654.94,1380.2399999999998
+basedbid,Launchpad,41.0,418.53000000000003,3525.8100000000004
+Merchant Moe Liquidity Book,Dexs,40.62,359.47,5898.7
+Launch Coin on Believe,Launchpad,40.0,45.15,248.47000000000003
+Origami Tech Perps,Interface,40.0,256.0,1309.6399999999999
+Kintara,Gaming,40.0,569.0,3128.0
+Scale,Dexs,39.12,567.95,2162.6400000000003
+Deluthium,DEX Aggregator,38.44,45.440000000000005,278.84999999999997
+RIP.FUN,NFT Marketplace,37.08,931.9399999999999,2942.32
+Lantern Staked SOL,Liquid Staking,37.0,174.33,1014.84
+Ronin,Chain,37.0,264.0,1570.0
+manifold.xyz,NFT Launchpad,36.0,866.53,3008.5699999999993
+OHAYO Global,Interface,35.0,926.0,6290.51
+Midas Markets,Interface,34.0,503.0,1752.19
+HypurrFi Pooled,Lending,34.0,245.0,1691.0
+BrownFi V3,Dexs,33.64,121.70999999999998,617.53
+Lets Get HAI,CDP,33.58,237.53,1112.9899999999998
+EISEN Finance,DEX Aggregator,33.4,56.760000000000005,6103.13
+Shadow Exchange Legacy,Dexs,33.39,483.48,3406.8199999999997
+AllBlue Stable,Yield,33.1,0.26,0.26
+Backpack SOL,Liquid Staking,33.0,172.23,667.6400000000001
+DragonSwap V3 Kaia,Dexs,33.0,277.0,2238.0
+BullX,Telegram Bot,32.0,215.0,957.64
+Bifrost Liquid Staking,Liquid Staking,32.0,665.0,2608.0
+THENA V1,Dexs,32.0,387.0,1067.0
+Hyperion,Dexs,32.0,508.0,2346.0
+Bubble Curve,Launchpad,31.36,501.78000000000003,531.53
+SmartX,Interface,31.07,233.03,5133.0999999999985
+stake.link liquid,Liquid Staking,31.0,21085.0,73185.0
+Kaskad,Lending,31.0,139.0,668.53
+Scroll,Chain,31.0,175.92000000000002,738.6600000000001
+Interface Social,Interface,30.44,33.64,215.78999999999996
+XBIT Perps,Interface,30.0,519.85,1855.1
+SoDEX Spot,Dexs,30.0,414.0,1047.65
+Etherex Legacy,Dexs,30.0,1076.0,6367.0
+Beets DEX,Dexs,29.71,236.04,1149.1799999999998
+otomate.trade,Interface,29.67,779.6400000000002,2577.93
+MUX Perps,Derivatives,29.09,522.99,2150.15
+Quickswap V4,Dexs,28.63,339.24,1974.9899999999996
+Vader AI,AI Agents,28.62,388.98,2111.72
+Privacy Pools,Privacy,28.18,587.26,3635.5499999999997
+DeepBook V3,Dexs,28.0,6425.0,46113.0
+SaucerSwap V1,Dexs,28.0,215.0,1090.8600000000001
+BEX,Dexs,27.83,198.63,892.9899999999999
+Taco,Interface,27.0,769.0,2385.31
+Ratio,Prediction Market,26.67,1026.3,3070.0599999999995
+Mento V3,Dexs,26.12,496.19000000000005,2078.97
+YeiLend,Lending,26.0,189.0,510.0
+GoPlus Locker V2,Token Locker,26.0,658.6,2874.990000000001
+Kittenswap CL,Dexs,25.68,318.78999999999996,2097.4599999999996
+ZINC,Gamified Mining,25.02,316.51,10804.609999999997
+Apostro,Risk Curators,24.29,169.53,710.25
+SuperSwap Ink DEX Aggregator,DEX Aggregator,24.13,158.77000000000004,636.3199999999999
+Tectonic,Lending,24.0,72.99000000000001,15140.559999999998
+MemeMax,Interface,24.0,425.0,1872.7700000000002
+Metropolis DLMM,Dexs,24.0,325.0,1622.54
+BulbaSwap V3,Dexs,23.4,161.17,711.12
+NetSwap,Dexs,23.38,213.01999999999998,762.4500000000002
+PancakeSwap StableSwap,Dexs,23.22,126.83000000000001,764.0699999999999
+Kinetiq Launch,Liquid Staking,23.01,169.01,634.3499999999999
+Stronghold Staked SOL,Liquid Staking,23.0,98.33,385.35999999999996
+SparkDEX V3.1,Dexs,23.0,200.0,2483.25
+Full Sail,Dexs,22.7,368.27000000000004,16403.37
+RockSolid Network,Yield,22.49,165.55,697.36
+Raphael Exchange AMM,Dexs,22.48,1883.76,6039.76
+Honeypop DEX,Dexs,22.25,195.42000000000002,953.91
+Ethereal DEX,Derivatives,22.0,264.0,3497.0
+Defi App Perps,Interface,22.0,496.0,6450.0
+Swappi,Dexs,21.75,154.03,765.5300000000002
+aPriori,Liquid Staking,21.75,171.48,869.99
+SectorOne DLMM,Dexs,21.42,104.23,329.01
+Coinbarrel,Launchpad,21.39,3487.52,49726.39
+Arena DEX,Dexs,21.21,427.89000000000004,870.48
+Myriad Markets,Prediction Market,20.25,111.85999999999999,440.56000000000006
+Bonkswap,Dexs,20.0,328.0,1334.38
+Venus Flux,Lending,19.36,134.17,607.9899999999999
+ZO Perps,Derivatives,19.0,147.51,1382.87
+AZverse Spot,Dexs,19.0,140.0,3628.0
+AlphaFi stSUI,Liquid Staking,19.0,215.0,1180.0
+Goldfinch,Uncollateralized Lending,18.73,343.11,3192.8
+Sushi Launchpad,Launchpad,18.53,2047.07,7345.239999999999
+ZNS Connect,Domains,17.85,112.89,373.34000000000003
+Sudo Perps,Derivatives,17.0,137.41,1892.2699999999998
+Dinari,RWA,16.9,202.14000000000001,202.14000000000001
+Pharaoh V3 Legacy,Dexs,16.87,2348.07,9894.89
+Hybra V3,Dexs,16.74,349.03,2048.7799999999997
+bot.fun,Launchpad,16.56,544.0899999999999,2093.89
+InfinityName,Domains,16.31,57.8,644.68
+AutoRange,Dexs,16.19,427.96999999999997,1180.58
+Clober V2,Dexs,16.04,149.80999999999997,1800.3600000000001
+Swop,Dexs,16.0,106.50999999999999,331.52
+Carbon.inc,Derivatives,16.0,217.13,478.13
+Vicuna Lending,Lending,16.0,17.84,34.57
+Origin ARM,Yield,16.0,504.0,3040.0
+Sei,Chain,16.0,207.68,736.3599999999999
+FluxFlow V3,Dexs,15.7,158.49,914.1200000000001
+Canonic,Dexs,15.7,102.35,674.3
+KrokoSwap V3,Dexs,15.42,120.95,415.3200000000001
+Synapse Cross Chain Bridge,Cross Chain Bridge,15.28,125.66000000000003,1095.44
+KiloEx,Derivatives,15.27,118.56999999999998,2800.4000000000005
+Domination Finance,Derivatives,15.27,105.23,265.12
+bow.fun,Launchpad,15.11,261.68000000000006,6702.25
+Topaz AMM,Dexs,15.07,243.9,2054.96
+Coffer,Dexs,15.0,89.28,297.83000000000004
+MiroShark Token,AI Agents,14.88,462.62,6203.450000000001
+Harbor,Yield,14.45,65.23,184.9
+Joe V2.1,Dexs,14.09,131.23,722.6999999999999
+Omnipair,Lending,14.0,139.0,464.03999999999996
+Cashmere,Bridge,14.0,114.0,641.0
+XOXNO Lending,Lending,13.25,96.50999999999999,1434.35
+Flex,Lending,13.03,89.25,280.14
+Beets DEX V3,Dexs,13.0,116.0,457.0
+CL8Y DEX,Dexs,13.0,210.79,515.6700000000001
+Meta Pool ETH,Liquid Staking,12.97,222.51,878.4500000000002
+Liquidium,Lending,12.71,100.16999999999999,574.36
+ApeSwap AMM,Dexs,12.53,196.16000000000003,1739.8599999999997
+Based Predict,Interface,12.38,86.52000000000001,727.6400000000001
+BitFi BTC,Anchor BTC,12.38,12.850000000000001,31.400000000000006
+Surge Credit,Lending,12.32,151.22,637.5000000000001
+DefiPlaza,Dexs,12.1,164.15,599.9
+Fraxlend,Lending,12.08,1244.58,3312.5999999999995
+Human Passport,Identity & Reputation,12.05,90.66,392.8
+Human ID,Identity & Reputation,12.04,90.66999999999999,391.72
+Anoncoin,Launchpad,12.0,292.0,10307.0
+STEAMM,Dexs,12.0,93.0,486.16
+Kyros,Liquid Restaking,12.0,43.57,26114.58
+Coinpilot,Interface,12.0,265.0,1738.52
+Algorand,Chain,12.0,93.0,520.0
+BabyDogeSwap,Dexs,11.41,178.28,865.7100000000002
+Hypertrade V3,Dexs,11.25,243.07,1175.62
+Sherwood,Privacy,11.22,242.97999999999996,930.1099999999999
+BIM Yield,Yield Aggregator,11.19,240.51000000000002,1196.9700000000003
+Pangolin V2,Dexs,11.16,259.0,751.85
+Cwallet Perps,Interface,11.0,471.0,852.99
+cap,Lending,10.53,166.14,484.1
+TONCO V1,Dexs,10.29,46.19,155.38
+Pico Staked SOL,Liquid Staking,10.0,55.35,202.62000000000003
+Amnis Finance,Liquid Staking,10.0,75.0,223.32999999999998
+BrownFi CLAMM,Dexs,9.6,722.6200000000001,1829.1000000000001
+BEND,Lending,9.43,64.22,277.87999999999994
+Hegic,Options,9.36,-1099.0,-65518.92
+Silo V3,Lending,8.82,73.57000000000001,448.35
+SYMMIO,Derivatives,8.65,302.01,727.15
+Ape.Store,Launchpad,8.55,345.83,31722.670000000002
+Hubra Staked SOL,Liquid Staking,8.47,27.979999999999997,109.10000000000001
+Extra Finance Xlend,Lending,8.43,52.709999999999994,137.07000000000002
+PotatoSwap V3,Dexs,8.37,106.63999999999999,445.33000000000004
+HypurrFi Isolated,Lending,8.11,150.72000000000003,1837.0800000000002
+GreenTown,SoFi,8.1,13.079999999999998,117.48000000000002
+Worm,Prediction Market,8.05,203.57000000000002,7358.570000000001
+Sheriff V3,Dexs,8.05,53.79,336.2300000000001
+FAITH Protocol,Gamified Mining,8.02,102.52,1415.5200000000002
+Kinza Finance,Lending,8.01,102.30000000000001,2675.32
+MINER,Gamified Mining,7.98,61.18000000000001,697.1800000000001
+Arena SocialFi,SoFi,7.92,91.83000000000001,437.34
+DigiFT,RWA,7.73,306.8400000000001,2207.1199999999994
+SwapMode V2,Dexs,7.51,14.899999999999999,39.779999999999994
+SquadSwap Dynamo,Dexs,7.44,63.129999999999995,201.39
+Hercules V3,Dexs,7.43,88.48,330.88000000000005
+Rainbow Token Launchpad,Launchpad,7.28,181.22000000000003,2187.8999999999996
+Liquid Protocol,Launchpad,7.28,181.13000000000002,2070.44
+Puffer Stake,Liquid Restaking,7.2,1628.0,4007.06
+Cellana Finance,Dexs,7.18,120.53999999999999,171.54000000000002
+HyperLend Isolated,Lending,7.0,39.989999999999995,222.76999999999995
+GT3,Dexs,6.65,81.2,821.3000000000002
+Supernova AMM,Dexs,6.62,52.8,312.1599999999999
+ZealousSwap,Dexs,6.51,114.31999999999998,316.74
+Quote,Interface,6.25,84.52,334.46999999999997
+SakeFinance,Lending,6.24,48.31,227.0
+Pangolin V3,Dexs,6.22,108.14,442.0199999999999
+SwapHood V3,Dexs,6.16,291.49,1195.2099999999998
+Nuri CL,Dexs,6.04,62.86,255.92999999999992
+Starke Staked SOL,Liquid Staking,5.99,29.669999999999995,107.42999999999999
+Pennysia,DEX Aggregator,5.86,26.380000000000003,28.410000000000004
+SimpleDEX,Dexs,5.82,52.25,241.13
+Tristero Darkpool,Dexs,5.77,40.349999999999994,166.63000000000002
+SparkDEX Perps,Derivatives,5.55,1202.3899999999999,6750.73
+Yieldzio,Interface,5.37,428.48999999999995,3001.9700000000003
+Lista RWA,RWA,5.33,39.47,284.12999999999994
+HyperYield,Lending,5.31,5.2,51.58
+Koi Finance AMM,Dexs,5.3,53.080000000000005,282.28999999999996
+Agen.space,Launchpad,5.06,228.39999999999998,5952.959999999999
+Nerve,Dexs,5.06,39.14999999999999,259.23
+CORE,Chain,4.92,54.510000000000005,259.86999999999995
+RobinSwap V3,Dexs,4.9,41.690000000000005,456.19000000000005
+MMT Perps,Interface,4.87,82.13,439.58000000000015
+Astar,Chain,4.66,54.849999999999994,118.46999999999998
+FLock.io,Decentralized AI,4.52,97.17000000000002,673.8399999999999
+Charm Finance V2,Liquidity Manager,4.52,75.52,298.8500000000001
+Shield Swap,Dexs,4.35,180.51999999999998,741.8
+Hyperlynx V3,Dexs,4.31,40.35,234.59
+Jester Perps,Interface,4.29,37.199999999999996,85.92
+Mendi Finance,Lending,4.2,82.13,301.31
+Abracadabra Spell,CDP,4.13,4.25,2669.6700000000005
+Superfund,Onchain Capital Allocator,4.1,29.250000000000004,73.92
+Spectra V2,Yield,4.07,136.71,1064.1199999999997
+Jupiter Lend DEX,Dexs,3.93,50.57,213.59000000000003
+OkieSwap Stableswap,Dexs,3.84,62.55,159.51
+SpringSui,Liquid Staking,3.8,658.1500000000001,1170.0399999999997
+Velodrome V1,Dexs,3.62,36.08,193.35000000000002
+Omni Terminal,Interface,3.6,115.86999999999999,143.63
+Jupiter Limit,DEX Aggregator,3.56,238.56,1028.4299999999998
+Katoshi Perps,Interface,3.56,24.33,70.88
+PrimeFi,Lending,3.55,378.03,1540.1699999999998
+Pharaoh CL,Dexs,3.5,85.94,362.61999999999995
+zkSwap V2,Dexs,3.37,41.89000000000001,326.29
+Ramses CL,Dexs,3.33,19.39,91.19000000000001
+Ferra DLMM,Dexs,3.32,49.24,161.16
+Yuzu Finance,Dexs,3.26,33.519999999999996,260.6799999999999
+Thala CDP,CDP,3.24,22.680000000000007,100.49999999999996
+Rubicon,Dexs,3.24,18.52,112.77
+Cipher Perps,Interface,3.23,13.83,18.51
+Velo Finance,Dexs,3.15,29.979999999999997,172.35
+Valiant Trade Perps,Interface,3.1,25.26,108.42
+Stabull Finance,Dexs,3.03,24.75,99.29999999999997
+Ethervista,Dexs,3.01,19.9,145.86
+Kintsu,Liquid Staking,2.92,24.169999999999998,105.31999999999998
+Parallel Protocol V3,CDP,2.9,173.63,771.73
+Defi Saver Perps,Interface,2.87,33.68,143.4
+Coin98 Perps,Interface,2.85,7.630000000000001,62.019999999999996
+Idle,Yield Aggregator,2.78,37.52,214.14
+DoubleUp,Luck Games,2.74,75.61999999999999,198.79
+Thaw,Luck Games,2.72,-3.3899999999999992,22.839999999999996
+SpringSui Ecosystem,Liquid Staking,2.59,25.189999999999998,180.80999999999997
+Phoenix Spot,Dexs,2.55,8.940000000000001,19.49
+Bloxwap,Interface,2.51,70.73,476.17999999999995
+Ooga Booga,DEX Aggregator,2.48,92.22000000000001,1096.8
+MoonTrader Perps,Interface,2.44,28.16,1639.7
+Gravity by Galxe,Chain,2.41,9.78,149.27
+Tulipa Capital,Risk Curators,2.39,16.67,64.47
+OkieSwap V3,Dexs,2.34,65.6,580.9700000000001
+TermMax,Lending,2.3,2236.19,3283.0099999999998
+Ferro,Dexs,2.23,95.5,978.14
+Mento V2,Algo-Stables,2.22,55.330000000000005,17573.84
+Lit.Trade,Interface,2.08,21.119999999999997,183.68000000000004
+Ride Markets,DEX Aggregator,2.06,493.24,1811.9700000000003
+Bedrock uniETH,Liquid Restaking,1.9,1410.96,5897.460000000001
+Virtus Protocol CL,Dexs,1.87,199.44,961.9799999999999
+Kayen Finance LST,Liquid Staking,1.87,17.66,150.92
+Quiver Protocol,Liquidity Manager,1.85,21.51,116.18999999999998
+Hyprearn Perps,Interface,1.81,98.55,492.83
+Swapr V3,Dexs,1.79,26.849999999999998,157.73
+ARMSys,Yield,1.77,26.680000000000003,722.7200000000001
+BulbaSwap V2,Dexs,1.77,38.279999999999994,121.03999999999996
+Radiant V2,Lending,1.73,274.87,1325.4599999999998
+Fraxtal,Chain,1.7,20.27,93.81000000000002
+ThalaSwap,Dexs,1.69,27.71,95.77999999999997
+America.Fun,Launchpad,1.64,37.39,785.61
+SomniaLend,Lending,1.63,2.86,11.980000000000002
+Okto Wallet Perps,Interface,1.62,98.3,1206.6099999999997
+marginfi LST,Liquid Staking,1.6,15.959999999999999,106.89000000000001
+Umbrae,Dexs,1.59,61.61000000000001,147.87000000000003
+Lithos,Dexs,1.56,22.35,127.52000000000002
+cipher.rip,SoFi,1.56,1.5899999999999999,8.529999999999998
+Lens Protocol,SoFi,1.55,9.260000000000002,50.36999999999999
+Deepr Finance,Lending,1.5,6.07,42.03000000000001
+Chainchat,SoFi,1.41,3.12,139.90000000000003
+OpenChat,SoFi,1.4,11.03,309.30999999999995
+Wompie,Yield,1.35,0.55,8.409999999999998
+Wrapped HLP,Yield,1.33,64.60000000000001,815.4
+SwapBased AMM,Dexs,1.27,11.34,45.68
+AgentRanking,Launchpad,1.27,5.039999999999999,29.33
+Ankr,Liquid Staking,1.27,27.27,4819.22
+Merchant Moe DEX,Dexs,1.25,31.33,161.77999999999997
+OmniHub,NFT Marketplace,1.25,10.75,49.83000000000001
+flooor.fun,NFT Marketplace,1.25,90.89999999999999,556.8999999999999
+AUTOfinance,Yield,1.24,2.84,33.76
+AlfaClub,SoFi,1.24,18.400000000000002,178.79999999999993
+Wei Name Service,Domains,1.24,56.09,2608.18
+MinMax Finance,Dexs,1.24,2.18,5.879999999999998
+JPG Store,NFT Marketplace,1.2,60.05,274.65
+BaseX,Dexs,1.18,13.489999999999998,247.57999999999998
+Verse,Dexs,1.16,99.8,229.75
+Edgevana,Liquid Staking,1.14,5.2299999999999995,315.22999999999996
+Boardwalk,Launchpad,1.13,19.59,142.14
+Metropolis AMM,Dexs,1.1,13.32,36.96999999999999
+SMARDEX AMM,Dexs,1.08,3.8800000000000003,18.419999999999995
+swap.coffee,DEX Aggregator,1.05,10.53,70.99000000000001
+FluidTokens,Lending,1.04,292.82,1028.0300000000002
+Nile CL,Dexs,1.0,10.26,69.35
+Crovia Aggregator,DEX Aggregator,0.98,2.16,17.089999999999996
+AllBlue V2,Dexs,0.95,12.670000000000002,131.89999999999998
+Arena Launch,Launchpad,0.94,58.470000000000006,223.73000000000002
+SupSwap V3,Dexs,0.93,2.0700000000000003,5.779999999999999
+Printr,Launchpad,0.89,52.78,775.53
+Boba,Chain,0.88,17.439999999999998,126.89999999999999
+Save SOL,Liquid Staking,0.86,0.91,0.91
+Kuru Aggregator,DEX Aggregator,0.86,50.260000000000005,627.3199999999999
+Sanctum Reserve,Yield,0.84,302.61999999999995,10544.75
+Mythos,Chain,0.79,11.530000000000001,25.849999999999994
+TrueCurrent,Derivatives,0.79,33.59,92.56
+Crovia NFT Marketplace,NFT Marketplace,0.79,1.02,23.160000000000004
+FluxBeam,Dexs,0.78,42.6,346.60999999999996
+FlowX V3,Dexs,0.78,17.380000000000003,87.53000000000002
+HEY,SoFi,0.78,80.33,356.02
+GTR.trade Perps,Interface,0.76,7.109999999999999,203.67999999999998
+Epsilon,DEX Aggregator,0.75,4.85,21.9
+Arbitrum Exchange V2,Dexs,0.73,12.79,51.97
+Kittenswap AMM,Dexs,0.72,15.92,183.67000000000002
+Swapr V2,Dexs,0.71,7.629999999999999,55.69000000000002
+Jellyverse,Dexs,0.7,0.7,1.73
+Orchard,Gamified Mining,0.7,72.4,2752.7100000000005
+moon.it,Launchpad,0.69,4.45,28.949999999999996
+Muscadine,Risk Curators,0.68,1.9400000000000002,2.0100000000000002
+SingularV,Risk Curators,0.68,4.97,22.509999999999998
+Solidly V2,Dexs,0.68,4.65,24.479999999999997
+Zebra V2,Dexs,0.63,6.199999999999999,46.88999999999999
+RivrDEX,Dexs,0.62,4.63,30.76
+SwapBased Concentrated Liquidity,Dexs,0.6,14.670000000000002,59.94
+Everdex,Dexs,0.6,40.00999999999999,169.56
+M11 Credit,Risk Curators,0.56,3.7899999999999996,14.51
+Saphyre V2,Dexs,0.56,21.039999999999996,100.84000000000002
+Mycelia Signal,Oracle,0.55,13797.85,13818.39
+Gem Wallet Perps,Interface,0.55,7.42,56.3
+JetSwap,Dexs,0.53,7.0,54.96000000000001
+Powercity Flex Protocol,CDP,0.52,36.45,61.190000000000005
+Hercules V2,Dexs,0.52,1.27,3.9799999999999995
+Mobius Money,Dexs,0.51,4.819999999999999,36.29
+KaspaCom Dex,Dexs,0.5,19.790000000000003,61.8
+Trueo,Prediction Market,0.45,222.63000000000002,795.3799999999998
+zkSwap V3,Dexs,0.43,5.270000000000001,54.3
+Wombat Exchange,Dexs,0.43,13.53,54.34
+Donut,Farm,0.43,3.6799999999999997,40.33
+hypeRank,Interface,0.4,2.49,73.75000000000003
+DackieSwap V3,Dexs,0.39,2.68,19.540000000000006
+Bonker,Launchpad,0.38,24.259999999999998,79.7
+RobinSwap V2,Dexs,0.38,6.69,44.67
+Zyberswap AMM,Dexs,0.38,4.19,17.300000000000004
+Seamless V1,Lending,0.36,5.1499999999999995,19.669999999999998
+Kodiak V2,Dexs,0.34,4.59,24.479999999999993
+Lybra V2,CDP,0.34,2.36,10.94
+OolongSwap,Dexs,0.32,2.31,16.02
+Enosys AMM V2,Dexs,0.32,2.4400000000000004,98.26000000000003
+Ammalgam DLEX,Lending,0.31,2.03,6.199999999999999
+Splash Protocol,Dexs,0.3,2.55,11.85
+FVM Exchange,Dexs,0.29,4.12,38.04000000000002
+Lynex V1,Dexs,0.29,4.89,20.669999999999998
+UniDerp,Launchpad,0.28,0.4,2.1100000000000003
+Nile Legacy,Dexs,0.26,2.09,24.180000000000003
+NarBet,Luck Games,0.26,0.3800000000000001,345.66999999999996
+Upheaval V3,Dexs,0.25,2.5400000000000005,57.989999999999995
+HoodFrens,SoFi,0.25,28.159999999999997,670.67
+Challenge4Trading Perp,Derivatives,0.25,0.81,16.58
+Solidly V3,Dexs,0.24,3.8200000000000003,8.64
+Rooster Protocol V2,Dexs,0.24,3.96,25.489999999999995
+Splash Wallet Perps,Interface,0.24,568.57,6442.08
+WESO DeFi,Dexs,0.22,0.13,0.13
+Ramses Legacy,Dexs,0.21,4.7299999999999995,21.610000000000003
+Pharaoh Legacy,Dexs,0.21,15.45,105.09000000000002
+Segment Finance,Lending,0.2,21.009999999999998,151.62
+JVault,Farm,0.2,5.5,28.059999999999995
+MemeJob,Launchpad,0.19,0.9099999999999999,27.42
+Sonne Finance,Lending,0.19,5.52,28.65
+Helix Spot,Dexs,0.16,48.769999999999996,656.8100000000001
+OkieSwap V2,Dexs,0.15,5.779999999999999,39.650000000000006
+Alterscope,Risk Curators,0.15,0.35,0.35
+HyperFX,DEX Aggregator,0.14,525.6500000000001,2285.51
+Colend Protocol,Lending,0.14,639.01,1119.01
+HyperWave,Yield,0.14,65.46,416.46999999999997
+Durianfun DEX Aggregator,DEX Aggregator,0.14,1.4900000000000002,12.259999999999998
+Bean Exchange,Dexs,0.13,1.3900000000000001,12.629999999999999
+Sudoswap V2,NFT Marketplace,0.13,12.72,70.38
+Retro,Dexs,0.13,0.56,3.4299999999999993
+AlphaPilot,Interface,0.12,2.13,18.84
+Emojicoin.fun,Launchpad,0.12,4.619999999999999,7.049999999999999
+ZeroLend Lending,Lending,0.11,6.98,429.0
+Movement,Chain,0.1,0.9400000000000001,9.04
+SwapMode V3,Dexs,0.1,0.08,0.16
+PriveX,Interface,0.1,42.54,145.98
+Fanex,Launchpad,0.1,1.4000000000000001,278.5800000000001
+Midas RWA,RWA,0.09,578.8399999999999,1256.92
+Fenix Standard Pools,Dexs,0.09,0.45,0.7900000000000001
+RH.fun,Launchpad,0.09,7.41,42.49
+Element NFT Marketplace,NFT Marketplace,0.08,0.1,1.4700000000000002
+SquadSwap Thanos,Dexs,0.07,0.6000000000000001,7513.57
+SpookySwap V2,Dexs,0.07,8.669999999999998,30.15
+Alphix,Dexs,0.06,2.5600000000000005,81.02000000000004
+E3,Dexs,0.06,0.37,2.31
+Yaka V2,Dexs,0.06,0.53,17.870000000000008
+GunFun,Launchpad,0.06,3.35,40.179999999999986
+DragonSwap V2 Kaia,Dexs,0.06,40.419999999999995,46.209999999999994
+Sheriff V2,Dexs,0.05,0.56,4.61
+BurrBear,Dexs,0.05,0.41000000000000003,1.7500000000000009
+DashsWallet,Portfolio Tracker,0.04,0.07,0.08
+Bifrost,Chain,0.04,0.32,1.5700000000000007
+SpookySwap Perps,Interface,0.04,0.14,0.55
+Garden,Cross Chain Bridge,0.04,1.94,2.0500000000000003
+WigoSwap,Dexs,0.04,1.67,9.950000000000001
+PurpsExchange,Dexs,0.03,0.36,2.1300000000000003
+HoodMint,Launchpad,0.03,0.19999999999999998,2.2600000000000002
+aelf,Chain,0.03,0.54,109.9
+FusionX V2,Dexs,0.03,0.92,3.2899999999999996
+Almanak,Onchain Capital Allocator,0.03,36.040000000000006,230.71
+SpinUp DEX,Dexs,0.03,2.6799999999999997,10.620000000000005
+Maia CL,Dexs,0.03,0.48999999999999994,1.9600000000000006
+Lunar Finance Aggregator,DEX Aggregator,0.03,2.85,15.58
+Valantis STEX,Dexs,0.03,4.93,636.82
+Meridian AMM,Dexs,0.03,0.32000000000000006,2.3199999999999994
+THENA PERPS,Derivatives,0.02,0.17,6.899999999999998
+Varlamore Capital,Risk Curators,0.02,0.14,0.9100000000000004
+Helios V3,Dexs,0.02,0.79,6.07
+Lazy Summer Protocol,Yield Aggregator,0.02,0.15,0.29000000000000004
+Rarible,Services,0.02,78.4,1873.3799999999999
+Zebra V1,Dexs,0.02,0.13999999999999999,0.8300000000000003
+SpiritSwap AMM,Dexs,0.02,5.19,18.789999999999996
+Surf Liquid,Yield,0.02,0.14,1.5900000000000007
+BendDAO Lending V2,NFT Lending,0.02,0.14,0.38000000000000006
+Lunar Finance Bridge Aggregator,Bridge Aggregators,0.01,1.02,25.53
+Hybra V2,Dexs,0.01,0.11,0.6600000000000004
+BakerDAO,Reserve Currency,0.01,1.46,3.5300000000000002
+Apex DeFi,Dexs,0.01,0.05,0.5000000000000001
+Fragmetric,Liquid Restaking,0.01,123.69999999999999,1169.0199999999998
+HumanFi,DEX Aggregator,0.01,0.28,7.34
+Cleopatra CL,Dexs,0.01,1.5500000000000003,5.52
+HX Finance,Dexs,0.01,0.23,1.1200000000000006
+SquadSwap V2,Dexs,0.01,0.09999999999999999,0.41000000000000003
+Barker,Yield Aggregator,0.01,0.09999999999999999,0.12
+Loxodrome AMM,Dexs,0.01,0.09000000000000001,0.21999999999999997
