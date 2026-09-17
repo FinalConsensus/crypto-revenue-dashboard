@@ -2,23 +2,25 @@ import streamlit as st
 import pandas as pd
 import requests
 import plotly.express as px
+from datetime import datetime
+import pytz
 
-st.set_page_config(page_title="Crypto Revenue Dashboard", layout="wide")
+st.set_page_config(page_title="Crypto Alpha Screener", layout="wide")
 
-# 1. Password Protection Mechanism
+# 1. Password Protection
 def check_password():
     def password_entered():
-        if st.session_state["password"] == "Admin123": 
+        if st.session_state["password"] == "Alpha2026": 
             st.session_state["password_correct"] = True
             del st.session_state["password"]
         else:
             st.session_state["password_correct"] = False
 
     if "password_correct" not in st.session_state:
-        st.text_input("Please enter the password to access the dashboard", type="password", on_change=password_entered, key="password")
+        st.text_input("Enter password", type="password", on_change=password_entered, key="password")
         return False
     elif not st.session_state["password_correct"]:
-        st.text_input("Please enter the password to access the dashboard", type="password", on_change=password_entered, key="password")
+        st.text_input("Enter password", type="password", on_change=password_entered, key="password")
         st.error("Incorrect password")
         return False
     return True
@@ -26,47 +28,64 @@ def check_password():
 if not check_password():
     st.stop()
 
-# 2. Data Fetching Functions
+# 2. Robust Data Fetching & Merging
 @st.cache_data(ttl=3600)
-def load_overview_data():
-    url = "https://api.llama.fi/overview/fees?excludeTotalDataChart=true&excludeTotalDataChartBreakdown=true&dataType=dailyRevenue"
+def load_master_data():
     try:
-        response = requests.get(url)
-        response.raise_for_status()
-        data = response.json()
-        protocols = data.get('protocols', [])
+        # A. Fetch Master Protocol List
+        proto_res = requests.get("https://api.llama.fi/protocols").json()
+        df_protocols = pd.DataFrame(proto_res)[['name', 'slug', 'category', 'mcap']]
         
-        cleaned_data = []
-        for p in protocols:
-            cleaned_data.append({
-                'Protocol': p.get('name'),
-                'Slug': p.get('module'),
-                'Sub_Sector': p.get('category'),
-                '24h_Revenue': p.get('total24h', 0) or 0,
-                '7d_Revenue': p.get('total7d', 0) or 0,
-                '30d_Revenue': p.get('total30d', 0) or 0
-            })
-            
-        df = pd.DataFrame(cleaned_data)
-        df = df[df['24h_Revenue'] > 0] 
+        # B. Fetch Fees
+        fees_res = requests.get("https://api.llama.fi/overview/fees?excludeTotalDataChart=true&dataType=dailyFees").json()
+        df_fees = pd.DataFrame(fees_res['protocols'])[['name', 'total24h', 'total7d', 'total30d']]
+        df_fees.rename(columns={'total24h': 'Fees_24h', 'total7d': 'Fees_7d', 'total30d': 'Fees_30d'}, inplace=True)
         
-        # --- NEW: Bucket small sub-sectors into 'Others' ---
+        # C. Fetch Revenue
+        rev_res = requests.get("https://api.llama.fi/overview/fees?excludeTotalDataChart=true&dataType=dailyRevenue").json()
+        df_rev = pd.DataFrame(rev_res['protocols'])[['name', 'total24h', 'total7d', 'total30d']]
+        df_rev.rename(columns={'total24h': 'Rev_24h', 'total7d': 'Rev_7d', 'total30d': 'Rev_30d'}, inplace=True)
+        
+        # Merge datasets
+        df = pd.merge(df_fees, df_rev, on='name', how='outer')
+        df = pd.merge(df, df_protocols, on='name', how='left')
+        
+        # Clean & Format
+        df.fillna(0, inplace=True)
+        df.rename(columns={'name': 'Protocol', 'category': 'Sub_Sector'}, inplace=True)
+        
+        # Bucket small sectors into 'Others'
         sector_counts = df['Sub_Sector'].value_counts()
         small_sectors = sector_counts[sector_counts < 3].index
         df['Sub_Sector'] = df['Sub_Sector'].apply(lambda x: 'Others' if x in small_sectors else x)
         
-        return df
+        # Calculate Alpha Metrics
+        df['Ann_Fees'] = df['Fees_30d'] * (365/30)
+        df['Ann_Rev'] = df['Rev_30d'] * (365/30)
+        
+        # Valuation Multiples
+        df['Price_to_Fees'] = df.apply(lambda x: x['mcap'] / x['Ann_Fees'] if x['Ann_Fees'] > 0 and x['mcap'] > 0 else None, axis=1)
+        df['Price_to_Rev'] = df.apply(lambda x: x['mcap'] / x['Ann_Rev'] if x['Ann_Rev'] > 0 and x['mcap'] > 0 else None, axis=1)
+        
+        # Momentum
+        df['Fee_Momentum_%'] = df.apply(lambda x: ((x['Fees_7d']/7) / (x['Fees_30d']/30) - 1) * 100 if x['Fees_30d'] > 0 else 0, axis=1)
+        
+        # Timestamp with local Brussels timezone
+        brussels_tz = pytz.timezone('Europe/Brussels')
+        current_time = datetime.now(brussels_tz).strftime("%Y-%m-%d %H:%M:%S CEST")
+        
+        return df, current_time
     except Exception as e:
-        st.error(f"Error fetching overview data: {e}")
-        return pd.DataFrame()
+        st.error(f"Error compiling master dataset: {e}")
+        return pd.DataFrame(), None
 
 @st.cache_data(ttl=3600)
-def load_historical_data(slug, metric="dailyRevenue"):
-    # Metric parameter allows switching between Revenue and Fees
+def load_historical_data(slug, metric="dailyFees"):
     url = f"https://api.llama.fi/summary/fees/{slug}?dataType={metric}"
     try:
         response = requests.get(url)
-        response.raise_for_status()
+        if response.status_code != 200:
+            return pd.DataFrame()
         data = response.json()
         chart_data = data.get('totalDataChart', [])
         
@@ -79,117 +98,141 @@ def load_historical_data(slug, metric="dailyRevenue"):
     except Exception:
         return pd.DataFrame()
 
-df = load_overview_data()
-
+# Load Data
+df, last_updated = load_master_data()
 if df.empty:
-    st.warning("No data found. Check your internet connection or the DeFiLlama API.")
     st.stop()
 
-# 3. Dashboard Title & Sidebar
-st.title("📊 Crypto Revenue & Fee Dashboard")
-st.markdown("Analyze the most profitable sub-sectors and protocols across the crypto industry.")
+# 3. Global Sidebar Filters
+st.sidebar.title("Global Settings")
+st.sidebar.markdown("Filters applied here affect all tabs.")
 
-st.sidebar.header("Filters & Navigation")
-sectors = ["All"] + sorted(df['Sub_Sector'].unique().tolist())
-selected_sector = st.sidebar.selectbox("Select a Sub-Sector", sectors)
+base_metric = st.sidebar.radio("Analyze Base Metric", ["Fees", "Revenue"])
+prefix = "Fees" if base_metric == "Fees" else "Rev"
 
+sectors = ["All"] + sorted([s for s in df['Sub_Sector'].unique() if s != 0 and isinstance(s, str)])
+selected_sector = st.sidebar.selectbox("Filter by Sector", sectors)
+
+min_mcap = st.sidebar.number_input("Minimum Market Cap ($)", value=0, step=1000000)
+min_cashflow = st.sidebar.number_input(f"Minimum 30d {base_metric} ($)", value=10000, step=10000)
+
+# Apply Global Filters
+filtered_df = df.copy()
 if selected_sector != "All":
-    filtered_df = df[df['Sub_Sector'] == selected_sector]
-else:
-    filtered_df = df
+    filtered_df = filtered_df[filtered_df['Sub_Sector'] == selected_sector]
 
-# 4. Tabs Structure
-tab1, tab2, tab3, tab4 = st.tabs(["Industry Overview", "Sector Deep Dive", "Top Protocols", "Historical Trends"])
+filtered_df = filtered_df[filtered_df['mcap'] >= min_mcap]
+filtered_df = filtered_df[filtered_df[f'{prefix}_30d'] >= min_cashflow]
+
+# 4. Dashboard UI
+st.title("🚀 Fundamental Alpha Screener")
+st.markdown("Identify undervalued, high-cashflow protocols with accelerating momentum.")
+if last_updated:
+    st.caption(f"🔄 Data last updated: **{last_updated}**")
+
+tab1, tab2, tab3, tab4 = st.tabs(["Valuation Matrix", "Momentum & Growth", "Sector Overview", "Historical Deep Dive"])
 
 with tab1:
-    st.subheader("Crypto Industry Revenue (24h)")
+    st.subheader(f"Valuation Screener (Price-to-{base_metric})")
+    st.markdown(f"Protocols with Tokens. **Lower multiple = cheaper valuation relative to generated {base_metric.lower()}.**")
     
-    col1, col2, col3 = st.columns(3)
-    col1.metric("Total 24h Revenue", f"${df['24h_Revenue'].sum():,.0f}")
-    col2.metric("Total 7d Revenue", f"${df['7d_Revenue'].sum():,.0f}")
-    col3.metric("Total 30d Revenue", f"${df['30d_Revenue'].sum():,.0f}")
+    val_df = filtered_df.dropna(subset=[f'Price_to_{prefix[:3]}']).sort_values(f'Price_to_{prefix[:3]}')
     
-    st.markdown("### Top Sub-Sectors")
-    sector_grouped = df.groupby('Sub_Sector')['24h_Revenue'].sum().reset_index()
-    sector_grouped = sector_grouped.sort_values(by='24h_Revenue', ascending=False)
-    
-    fig_sector = px.bar(sector_grouped, x='Sub_Sector', y='24h_Revenue', 
-                        labels={'24h_Revenue': '24h Revenue (USD)', 'Sub_Sector': 'Sector'})
-    fig_sector.update_layout(xaxis_title="", yaxis_title="Revenue (USD)")
-    st.plotly_chart(fig_sector, use_container_width=True)
+    col1, col2 = st.columns([1, 2])
+    with col1:
+        st.dataframe(
+            val_df[['Protocol', 'Sub_Sector', 'mcap', f'Ann_{prefix[:3]}', f'Price_to_{prefix[:3]}']].head(25).style.format({
+                'mcap': '${:,.0f}',
+                f'Ann_{prefix[:3]}': '${:,.0f}',
+                f'Price_to_{prefix[:3]}': '{:.2f}x'
+            }),
+            use_container_width=True, height=500
+        )
+    with col2:
+        fig_scatter = px.scatter(
+            val_df, x=f'Ann_{prefix[:3]}', y='mcap', color='Sub_Sector', hover_name='Protocol',
+            log_x=True, log_y=True, size_max=60,
+            title=f"Valuation Scatter: Market Cap vs Annualized {base_metric} (Log Scale)",
+            labels={f'Ann_{prefix[:3]}': f'Annualized {base_metric} ($)', 'mcap': 'Market Cap ($)'}
+        )
+        if not val_df.empty:
+            fig_scatter.add_shape(type="line", line=dict(dash='dash', color="gray"), 
+                                  x0=val_df[f'Ann_{prefix[:3]}'].min(), y0=val_df[f'Ann_{prefix[:3]}'].min(), 
+                                  x1=val_df[f'Ann_{prefix[:3]}'].max(), y1=val_df[f'Ann_{prefix[:3]}'].max())
+        st.plotly_chart(fig_scatter, use_container_width=True)
 
 with tab2:
-    st.subheader(f"Deep Dive: {selected_sector}")
-    st.markdown("Sort by **24h_Revenue** or **7d_Revenue** to identify emerging protocols.")
+    st.subheader("Momentum Screener")
+    st.markdown("Protocols where the 7-day daily average is outperforming the 30-day daily average.")
     
-    display_df = filtered_df.drop(columns=['Slug']).sort_values('24h_Revenue', ascending=False).reset_index(drop=True)
+    mom_df = filtered_df.sort_values('Fee_Momentum_%', ascending=False)
     
     st.dataframe(
-        display_df.style.format({
-            '24h_Revenue': '${:,.0f}',
-            '7d_Revenue': '${:,.0f}',
-            '30d_Revenue': '${:,.0f}'
-        }),
-        use_container_width=True,
-        height=600
+        mom_df[['Protocol', 'Sub_Sector', f'{prefix}_24h', f'{prefix}_7d', f'{prefix}_30d', 'Fee_Momentum_%']].style.format({
+            f'{prefix}_24h': '${:,.0f}',
+            f'{prefix}_7d': '${:,.0f}',
+            f'{prefix}_30d': '${:,.0f}',
+            'Fee_Momentum_%': '{:,.2f}%'
+        }).background_gradient(subset=['Fee_Momentum_%'], cmap="RdYlGn", vmin=-50, vmax=50),
+        use_container_width=True, height=600
     )
 
 with tab3:
-    st.subheader("Top 20 Protocols (Global Ranking)")
-    top_protocols = df.sort_values('24h_Revenue', ascending=False).head(20)
+    st.subheader("Sector Dominance")
+    sector_grouped = filtered_df.groupby('Sub_Sector').agg({
+        f'{prefix}_24h': 'sum',
+        f'{prefix}_30d': 'sum',
+        'mcap': 'sum'
+    }).reset_index().sort_values(f'{prefix}_30d', ascending=False)
     
-    fig_protocols = px.bar(top_protocols, x='Protocol', y='24h_Revenue', color='Sub_Sector',
-                           labels={'24h_Revenue': '24h Revenue (USD)', 'Protocol': 'Protocol'})
-    fig_protocols.update_layout(xaxis_title="", yaxis_title="Revenue (USD)")
-    st.plotly_chart(fig_protocols, use_container_width=True)
+    fig_sector = px.bar(sector_grouped, x='Sub_Sector', y=f'{prefix}_30d', 
+                        title=f"Total 30-Day {base_metric} by Sector",
+                        labels={f'{prefix}_30d': f'30d {base_metric} ($)', 'Sub_Sector': 'Sector'})
+    st.plotly_chart(fig_sector, use_container_width=True)
 
 with tab4:
-    st.subheader("Protocol Historical Data (Aggregation Mode)")
+    st.subheader("Historical Trajectory & Aggregation")
     
-    # Toggle between Fees and Revenue
-    metric_choice = st.radio("Select Metric to Display (Crucial if Revenue is missing):", ["Revenue", "Fees"], horizontal=True)
-    api_metric = "dailyRevenue" if metric_choice == "Revenue" else "dailyFees"
+    protocol_list = sorted([p for p in filtered_df['Protocol'].tolist() if isinstance(p, str)])
     
-    protocol_list = sorted(filtered_df['Protocol'].tolist())
-    
-    # Multi-select allows aggregating multiple protocols (e.g. Pump.fun + PumpSwap)
     selected_protocols = st.multiselect(
-        "Select Protocol(s) to view or aggregate", 
+        "Select Protocol(s) to view or aggregate (e.g., compare or combine multiple versions)", 
         options=protocol_list,
         default=[protocol_list[0]] if protocol_list else []
     )
     
     if selected_protocols:
-        days = st.radio("Select Timeframe", [30, 90, 180, 365], index=1, horizontal=True, format_func=lambda x: f"Last {x} Days")
+        days = st.radio("Timeframe", [30, 90, 180, 365], index=1, horizontal=True, format_func=lambda x: f"{x} Days")
+        api_metric = "dailyFees" if base_metric == "Fees" else "dailyRevenue"
         
         combined_hist_df = pd.DataFrame()
         
-        # Fetch data for each selected protocol and combine
         for prot in selected_protocols:
-            slug = filtered_df[filtered_df['Protocol'] == prot]['Slug'].iloc[0]
-            with st.spinner(f"Fetching {metric_choice} data for {prot}..."):
-                temp_df = load_historical_data(slug, api_metric)
-                if not temp_df.empty:
-                    temp_df['Protocol'] = prot
-                    combined_hist_df = pd.concat([combined_hist_df, temp_df])
+            slug_match = df[df['Protocol'] == prot]['slug'].values
+            if len(slug_match) > 0 and isinstance(slug_match[0], str):
+                slug = slug_match[0]
+                with st.spinner(f"Fetching {api_metric} for {prot}..."):
+                    temp_df = load_historical_data(slug, api_metric)
+                    if not temp_df.empty:
+                        temp_df['Protocol'] = prot
+                        combined_hist_df = pd.concat([combined_hist_df, temp_df])
         
         if not combined_hist_df.empty:
             cutoff_date = pd.to_datetime("today") - pd.Timedelta(days=days)
             filtered_hist = combined_hist_df[combined_hist_df['Date'] >= cutoff_date]
             
-            # Aggregate values by Date
             agg_df = filtered_hist.groupby('Date')['Value'].sum().reset_index()
             
-            project_name = " + ".join(selected_protocols)
             fig_trend = px.line(agg_df, x='Date', y='Value', 
-                                title=f"{project_name} - Aggregated Daily {metric_choice}",
-                                labels={'Value': f'Daily {metric_choice} (USD)', 'Date': 'Date'})
-            fig_trend.update_layout(xaxis_title="", yaxis_title=f"{metric_choice} (USD)")
+                                title=f"Aggregated Daily {base_metric} for: {', '.join(selected_protocols)}",
+                                labels={'Value': f'Daily {base_metric} ($)', 'Date': 'Date'})
+            
+            agg_df['7D_MA'] = agg_df['Value'].rolling(window=7).mean()
+            fig_trend.add_scatter(x=agg_df['Date'], y=agg_df['7D_MA'], mode='lines', name='7-Day Moving Avg', line=dict(dash='dot', color='orange'))
             
             st.plotly_chart(fig_trend, use_container_width=True)
         else:
-            st.info(f"No historical {metric_choice} data available for the selected protocol(s). Try switching the metric toggle.")
+            st.error(f"No historical {base_metric} data available. Try switching the global Base Metric in the sidebar.")
 
-# 5. Footer / Attribution
 st.markdown("---")
-st.markdown("💡 *Data powered by [DeFiLlama](https://defillama.com/)*")
+st.markdown("💡 *Data provided by [DeFiLlama](https://defillama.com/)*")
