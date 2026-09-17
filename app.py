@@ -34,27 +34,30 @@ def load_master_data():
     try:
         # A. Fetch Master Protocol List
         proto_res = requests.get("https://api.llama.fi/protocols").json()
-        df_protocols = pd.DataFrame(proto_res)[['name', 'slug', 'category', 'mcap']]
+        df_protocols = pd.DataFrame(proto_res)[['slug', 'name', 'category', 'mcap']]
+        df_protocols.rename(columns={'name': 'Protocol', 'category': 'Sub_Sector'}, inplace=True)
         
         # B. Fetch Fees
         fees_res = requests.get("https://api.llama.fi/overview/fees?excludeTotalDataChart=true&dataType=dailyFees").json()
-        df_fees = pd.DataFrame(fees_res['protocols'])[['name', 'total24h', 'total7d', 'total30d']]
-        df_fees.rename(columns={'total24h': 'Fees_24h', 'total7d': 'Fees_7d', 'total30d': 'Fees_30d'}, inplace=True)
+        df_fees = pd.DataFrame(fees_res['protocols'])[['module', 'name', 'total24h', 'total7d', 'total30d']]
+        df_fees.rename(columns={'module': 'slug', 'name': 'fee_name', 'total24h': 'Fees_24h', 'total7d': 'Fees_7d', 'total30d': 'Fees_30d'}, inplace=True)
         
         # C. Fetch Revenue
         rev_res = requests.get("https://api.llama.fi/overview/fees?excludeTotalDataChart=true&dataType=dailyRevenue").json()
-        df_rev = pd.DataFrame(rev_res['protocols'])[['name', 'total24h', 'total7d', 'total30d']]
-        df_rev.rename(columns={'total24h': 'Rev_24h', 'total7d': 'Rev_7d', 'total30d': 'Rev_30d'}, inplace=True)
+        df_rev = pd.DataFrame(rev_res['protocols'])[['module', 'name', 'total24h', 'total7d', 'total30d']]
+        df_rev.rename(columns={'module': 'slug', 'name': 'rev_name', 'total24h': 'Rev_24h', 'total7d': 'Rev_7d', 'total30d': 'Rev_30d'}, inplace=True)
         
-        # Merge datasets
-        df = pd.merge(df_fees, df_rev, on='name', how='outer')
-        df = pd.merge(df, df_protocols, on='name', how='left')
+        # Merge datasets on SLUG (Unieke ID) instead of NAME
+        df = pd.merge(df_fees, df_rev, on='slug', how='outer')
+        df = pd.merge(df, df_protocols, on='slug', how='left')
         
-        # Clean & Format text columns (PyArrow Fix)
-        df.rename(columns={'name': 'Protocol', 'category': 'Sub_Sector'}, inplace=True)
-        df['Protocol'] = df['Protocol'].fillna("Unknown").astype(str)
+        # Clean & Format Protocol Names
+        df['Protocol'] = df['Protocol'].fillna(df['fee_name']).fillna(df['rev_name']).fillna("Unknown").astype(str)
         df['slug'] = df['slug'].fillna("Unknown").astype(str)
         df['Sub_Sector'] = df['Sub_Sector'].fillna("Unknown").astype(str)
+        
+        # Oude tijdelijke naamkolommen verwijderen
+        df.drop(columns=['fee_name', 'rev_name'], inplace=True, errors='ignore')
         
         # Fill remaining numerical blanks with 0
         df.fillna(0, inplace=True)
@@ -84,7 +87,7 @@ def load_master_data():
     except Exception as e:
         st.error(f"Error compiling master dataset: {e}")
         return pd.DataFrame(), None
-
+        
 @st.cache_data(ttl=3600)
 def load_historical_data(slug, metric="dailyFees"):
     url = f"https://api.llama.fi/summary/fees/{slug}?dataType={metric}"
