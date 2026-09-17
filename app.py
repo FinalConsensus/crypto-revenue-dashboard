@@ -51,8 +51,15 @@ def load_master_data():
         df = pd.merge(df, df_protocols, on='name', how='left')
         
         # Clean & Format
-        df.fillna(0, inplace=True)
         df.rename(columns={'name': 'Protocol', 'category': 'Sub_Sector'}, inplace=True)
+        
+        # FIX VOOR DE ERROR: Tekstkolommen expliciet als tekst (string) behandelen
+        df['Protocol'] = df['Protocol'].fillna("Unknown").astype(str)
+        df['slug'] = df['slug'].fillna("Unknown").astype(str)
+        df['Sub_Sector'] = df['Sub_Sector'].fillna("Unknown").astype(str)
+        
+        # Resterende (numerieke) lege waarden vullen met 0
+        df.fillna(0, inplace=True)
         
         # Bucket small sectors into 'Others'
         sector_counts = df['Sub_Sector'].value_counts()
