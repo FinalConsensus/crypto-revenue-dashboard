@@ -50,15 +50,13 @@ def load_master_data():
         df = pd.merge(df_fees, df_rev, on='name', how='outer')
         df = pd.merge(df, df_protocols, on='name', how='left')
         
-        # Clean & Format
+        # Clean & Format text columns (PyArrow Fix)
         df.rename(columns={'name': 'Protocol', 'category': 'Sub_Sector'}, inplace=True)
-        
-        # FIX VOOR DE ERROR: Tekstkolommen expliciet als tekst (string) behandelen
         df['Protocol'] = df['Protocol'].fillna("Unknown").astype(str)
         df['slug'] = df['slug'].fillna("Unknown").astype(str)
         df['Sub_Sector'] = df['Sub_Sector'].fillna("Unknown").astype(str)
         
-        # Resterende (numerieke) lege waarden vullen met 0
+        # Fill remaining numerical blanks with 0
         df.fillna(0, inplace=True)
         
         # Bucket small sectors into 'Others'
@@ -66,7 +64,7 @@ def load_master_data():
         small_sectors = sector_counts[sector_counts < 3].index
         df['Sub_Sector'] = df['Sub_Sector'].apply(lambda x: 'Others' if x in small_sectors else x)
         
-        # Calculate Alpha Metrics
+        # Base Cashflow Metrics
         df['Ann_Fees'] = df['Fees_30d'] * (365/30)
         df['Ann_Rev'] = df['Rev_30d'] * (365/30)
         
@@ -74,8 +72,9 @@ def load_master_data():
         df['Price_to_Fees'] = df.apply(lambda x: x['mcap'] / x['Ann_Fees'] if x['Ann_Fees'] > 0 and x['mcap'] > 0 else None, axis=1)
         df['Price_to_Rev'] = df.apply(lambda x: x['mcap'] / x['Ann_Rev'] if x['Ann_Rev'] > 0 and x['mcap'] > 0 else None, axis=1)
         
-        # Momentum
-        df['Fee_Momentum_%'] = df.apply(lambda x: ((x['Fees_7d']/7) / (x['Fees_30d']/30) - 1) * 100 if x['Fees_30d'] > 0 else 0, axis=1)
+        # Momentum (% difference between 7d average and 30d average)
+        df['Fees_Momentum_%'] = df.apply(lambda x: ((x['Fees_7d']/7) / (x['Fees_30d']/30) - 1) * 100 if x['Fees_30d'] > 0 else 0, axis=1)
+        df['Rev_Momentum_%'] = df.apply(lambda x: ((x['Rev_7d']/7) / (x['Rev_30d']/30) - 1) * 100 if x['Rev_30d'] > 0 else 0, axis=1)
         
         # Timestamp with local Brussels timezone
         brussels_tz = pytz.timezone('Europe/Brussels')
@@ -117,7 +116,7 @@ st.sidebar.markdown("Filters applied here affect all tabs.")
 base_metric = st.sidebar.radio("Analyze Base Metric", ["Fees", "Revenue"])
 prefix = "Fees" if base_metric == "Fees" else "Rev"
 
-sectors = ["All"] + sorted([s for s in df['Sub_Sector'].unique() if s != 0 and isinstance(s, str)])
+sectors = ["All"] + sorted([s for s in df['Sub_Sector'].unique() if s != "Unknown" and s != "0"])
 selected_sector = st.sidebar.selectbox("Filter by Sector", sectors)
 
 min_mcap = st.sidebar.number_input("Minimum Market Cap ($)", value=0, step=1000000)
@@ -143,44 +142,48 @@ with tab1:
     st.subheader(f"Valuation Screener (Price-to-{base_metric})")
     st.markdown(f"Protocols with Tokens. **Lower multiple = cheaper valuation relative to generated {base_metric.lower()}.**")
     
-    val_df = filtered_df.dropna(subset=[f'Price_to_{prefix[:3]}']).sort_values(f'Price_to_{prefix[:3]}')
+    price_col = f'Price_to_{prefix}'
+    ann_col = f'Ann_{prefix}'
+    
+    val_df = filtered_df.dropna(subset=[price_col]).sort_values(price_col)
     
     col1, col2 = st.columns([1, 2])
     with col1:
         st.dataframe(
-            val_df[['Protocol', 'Sub_Sector', 'mcap', f'Ann_{prefix[:3]}', f'Price_to_{prefix[:3]}']].head(25).style.format({
+            val_df[['Protocol', 'Sub_Sector', 'mcap', ann_col, price_col]].head(25).style.format({
                 'mcap': '${:,.0f}',
-                f'Ann_{prefix[:3]}': '${:,.0f}',
-                f'Price_to_{prefix[:3]}': '{:.2f}x'
+                ann_col: '${:,.0f}',
+                price_col: '{:.2f}x'
             }),
             use_container_width=True, height=500
         )
     with col2:
         fig_scatter = px.scatter(
-            val_df, x=f'Ann_{prefix[:3]}', y='mcap', color='Sub_Sector', hover_name='Protocol',
+            val_df, x=ann_col, y='mcap', color='Sub_Sector', hover_name='Protocol',
             log_x=True, log_y=True, size_max=60,
             title=f"Valuation Scatter: Market Cap vs Annualized {base_metric} (Log Scale)",
-            labels={f'Ann_{prefix[:3]}': f'Annualized {base_metric} ($)', 'mcap': 'Market Cap ($)'}
+            labels={ann_col: f'Annualized {base_metric} ($)', 'mcap': 'Market Cap ($)'}
         )
         if not val_df.empty:
             fig_scatter.add_shape(type="line", line=dict(dash='dash', color="gray"), 
-                                  x0=val_df[f'Ann_{prefix[:3]}'].min(), y0=val_df[f'Ann_{prefix[:3]}'].min(), 
-                                  x1=val_df[f'Ann_{prefix[:3]}'].max(), y1=val_df[f'Ann_{prefix[:3]}'].max())
+                                  x0=val_df[ann_col].min(), y0=val_df[ann_col].min(), 
+                                  x1=val_df[ann_col].max(), y1=val_df[ann_col].max())
         st.plotly_chart(fig_scatter, use_container_width=True)
 
 with tab2:
     st.subheader("Momentum Screener")
     st.markdown("Protocols where the 7-day daily average is outperforming the 30-day daily average.")
     
-    mom_df = filtered_df.sort_values('Fee_Momentum_%', ascending=False)
+    mom_col = f'{prefix}_Momentum_%'
+    mom_df = filtered_df.sort_values(mom_col, ascending=False)
     
     st.dataframe(
-        mom_df[['Protocol', 'Sub_Sector', f'{prefix}_24h', f'{prefix}_7d', f'{prefix}_30d', 'Fee_Momentum_%']].style.format({
+        mom_df[['Protocol', 'Sub_Sector', f'{prefix}_24h', f'{prefix}_7d', f'{prefix}_30d', mom_col]].style.format({
             f'{prefix}_24h': '${:,.0f}',
             f'{prefix}_7d': '${:,.0f}',
             f'{prefix}_30d': '${:,.0f}',
-            'Fee_Momentum_%': '{:,.2f}%'
-        }).background_gradient(subset=['Fee_Momentum_%'], cmap="RdYlGn", vmin=-50, vmax=50),
+            mom_col: '{:,.2f}%'
+        }).background_gradient(subset=[mom_col], cmap="RdYlGn", vmin=-50, vmax=50),
         use_container_width=True, height=600
     )
 
@@ -200,7 +203,7 @@ with tab3:
 with tab4:
     st.subheader("Historical Trajectory & Aggregation")
     
-    protocol_list = sorted([p for p in filtered_df['Protocol'].tolist() if isinstance(p, str)])
+    protocol_list = sorted([p for p in filtered_df['Protocol'].tolist() if p != "Unknown"])
     
     selected_protocols = st.multiselect(
         "Select Protocol(s) to view or aggregate (e.g., compare or combine multiple versions)", 
@@ -216,7 +219,7 @@ with tab4:
         
         for prot in selected_protocols:
             slug_match = df[df['Protocol'] == prot]['slug'].values
-            if len(slug_match) > 0 and isinstance(slug_match[0], str):
+            if len(slug_match) > 0 and slug_match[0] != "Unknown":
                 slug = slug_match[0]
                 with st.spinner(f"Fetching {api_metric} for {prot}..."):
                     temp_df = load_historical_data(slug, api_metric)
